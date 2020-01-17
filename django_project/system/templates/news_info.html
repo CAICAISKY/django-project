@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+    <meta name="description" content="" />
+    <title>新闻详情</title>
+    {# 页面的头部信息，可添加头部标签，css,js,<title> #}
+{% endblock %}
+{% block container %}
+    <!--主体-->
+    <header class="wy-header">
+        <a href="{% url 'system:news_list' %}"> <div class="wy-header-icon-back"><span></span></div></a>
+        <div class="wy-header-title">新闻详情</div>
+    </header>
+    <div class="weui-content">
+        <article class="weui-article">
+            <h1>{{ news_obj.title }}</h1>
+            <h3 class="wy-news-time">{{ news_obj.created_at|date }}</h3>
+            <h3 class="wy-news-time">浏览次数: {{ news_obj.view_count }}</h3>
+            <section class="wy-news-info">
+                {{ news_obj.content|safe }}
+            </section>
+        </article>
+    </div>
+{% endblock %}

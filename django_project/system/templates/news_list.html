@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+<meta name="description" content="" />
+<title>新闻列表</title>
+{% endblock %}
+{% block container %}
+<header class="wy-header">
+    <a href="{% url 'index' %}"><div class="wy-header-icon-back"><span></span></div></a>
+    <div class="wy-header-title">新闻列表</div>
+</header>
+<div class="weui-content">
+    <div class="weui-cells wy-news-list">
+        {% for news in news_list %}
+        <a class="weui-cell weui-cell_access" href="{% url 'system:news_info' news.pk %}">
+            <div class="weui-cell__bd">
+                <p>{{ news.title }}</p>
+            </div>
+            <div class="weui-cell__ft"></div>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
