@@ -1,3 +1,4 @@
+from django.core.paginator import Paginator
 from django.db.models import F
 from django.shortcuts import render, get_object_or_404, get_list_or_404
 
@@ -21,7 +22,10 @@ def news_info(request, pk):
 def news_list(request):
     """ 新闻列表 """
     # 获取新闻列表: 有效的、新闻类型
+    page_num = request.GET.get('page_num', default=1)
     news = get_list_or_404(News, is_valid=True, types=constants.NEWS_TYPE_NEW)
+    paginator = Paginator(news, 20)
+    page = paginator.page(page_num)
     return render(request, 'news_list.html', {
-        'news_list': news
+        'page': page
     })
