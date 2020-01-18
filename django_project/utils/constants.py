@@ -11,3 +11,11 @@ NEWS_TYPES_CHOICES = (
     (NEWS_TYPE_NEW, '新闻'),
     (NEWS_TYPE_NOTICE, '通知'),
 )
+
+""" 用户模块-性别 """
+USER_SEX_MAN = 1
+USER_SEX_WOMAN = 0
+USER_SEX_CHOICES = (
+    (USER_SEX_MAN, '男'),
+    (USER_SEX_WOMAN, '女')
+)

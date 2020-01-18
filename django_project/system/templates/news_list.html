@@ -21,6 +21,7 @@
     </div>
 
     <div class="weui-footer">
+        <p>总共有{{ page.paginator.num_pages }}页，当前是第{{ page.number }}页</p>
         <p class="weui-footer__links">
         {% if page.has_previous %}
             <a class="weui-footer__link" href="{% url 'system:news_list' %}?page_num={{ page.previous_page_number }}">上一页</a>
