@@ -3,9 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="6a4654d0-fb4e-4316-bc5c-da8e8d920fa5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/templates/news_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/system/templates/news_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/migrations/0002_auto_20200109_1754.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/migrations/0003_auto_20200110_0537.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/migrations/0004_auto_20200110_0542.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/migrations/0005_collections_product_store_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/migrations/0006_auto_20200116_1146.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mall/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/migrations/0002_auto_20200117_1800.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/system/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constants.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,14 +48,14 @@
           <entry key="HTML" value="36" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="1" />
-          <entry key="Python" value="106" />
+          <entry key="Python" value="122" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="2011" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="22830" />
+          <entry key="Python" value="26546" />
           <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
@@ -57,31 +64,66 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/accounts/models.py">
+        <entry file="file://$PROJECT_DIR$/mall/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-738">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="343">
+              <caret line="99" column="31" lean-forward="true" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/tests.py">
+        <entry file="file://$PROJECT_DIR$/mall/migrations/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_project/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_project/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_project/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="270">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/constants.py">
+        <entry file="file://$PROJECT_DIR$/django_project/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="132">
+              <caret line="22" selection-start-line="22" selection-end-line="27" selection-end-column="1" />
+              <folding>
+                <element signature="e#639#671#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/migrations/0001_initial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -158,9 +200,7 @@
         <option value="$PROJECT_DIR$/weibo/templates/test.html" />
         <option value="$PROJECT_DIR$/weibo/templates/weibo_test.html" />
         <option value="$PROJECT_DIR$/weibo/views.py" />
-        <option value="$PROJECT_DIR$/mall/models.py" />
         <option value="$PROJECT_DIR$/django_project/settings.py" />
-        <option value="$PROJECT_DIR$/system/models.py" />
         <option value="$PROJECT_DIR$/django_project/views.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/footer.html" />
@@ -170,9 +210,11 @@
         <option value="$PROJECT_DIR$/system/templates/news_info.html" />
         <option value="$PROJECT_DIR$/system/views.py" />
         <option value="$PROJECT_DIR$/system/templates/news_list.html" />
-        <option value="$PROJECT_DIR$/utils/constants.py" />
         <option value="$PROJECT_DIR$/accounts/models.py" />
         <option value="$PROJECT_DIR$/accounts/tests.py" />
+        <option value="$PROJECT_DIR$/utils/constants.py" />
+        <option value="$PROJECT_DIR$/system/models.py" />
+        <option value="$PROJECT_DIR$/mall/models.py" />
       </list>
     </option>
   </component>
@@ -204,12 +246,18 @@
             <path>
               <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="django_project" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="django_project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="django_project" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django_project" type="462c0819:PsiDirectoryNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -406,13 +454,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4992636" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.29758713" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" weight="0.29758713" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -421,7 +470,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5028612" side_tool="true" weight="0.47855228" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.8741059" weight="0.33646113" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.8741059" visible="true" weight="0.33646113" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49642345" weight="0.32841823" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -460,54 +509,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mall/migrations/0004_auto_20200110_0542.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/db/models/fields/related.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="781" column="36" selection-start-line="781" selection-start-column="36" selection-end-line="781" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/idlelib/idle_test/test_searchengine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="225" column="8" selection-start-line="225" selection-start-column="8" selection-end-line="225" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/db/backends/base/operations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/heapq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="523" selection-start-line="523" selection-end-line="523" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/collections/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="585" column="27" selection-start-line="585" selection-start-column="22" selection-end-line="585" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/db/transaction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/db/models/manager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -523,20 +524,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo/test.py" />
-    <entry file="file://$PROJECT_DIR$/django_project/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/MySQLdb/cursors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="205" selection-start-line="205" selection-end-line="205" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/db/backends/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>
@@ -616,16 +607,6 @@
     <entry file="file://$PROJECT_DIR$/medias/timg.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="2072" column="6" selection-start-line="2072" selection-start-column="6" selection-end-line="2072" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/lib/weui.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -633,16 +614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="588" selection-start-line="588" selection-end-line="588" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_project/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -688,16 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_project/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="22" selection-start-line="22" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="e#639#671#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -719,16 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -773,17 +724,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/uuid.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="769" lean-forward="true" selection-start-line="769" selection-end-line="769" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/templatetags/my_filters.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/db/models/fields/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="2309" column="15" selection-start-line="2309" selection-start-column="6" selection-end-line="2309" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -796,10 +750,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-738">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="390">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/db/backends/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="250" selection-start-line="250" selection-end-line="250" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/db/models/fields/related.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="1587" selection-start-line="1587" selection-end-line="1587" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="33" column="23" lean-forward="true" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="63" column="35" lean-forward="true" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_project/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_project/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_project/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_project/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="22" selection-start-line="22" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="e#639#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="84" column="29" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/migrations/0003_auto_20200119_1657.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="99" column="31" lean-forward="true" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
