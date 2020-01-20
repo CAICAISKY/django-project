@@ -19,8 +19,8 @@ class BaseModel(models.Model):
 
 class Classify(BaseModel):
     """ 商品的分类 """
-    uid = models.UUIDField('分类ID', default=uuid.uuid4(), editable=False)
-    parent = models.ForeignKey('self', related_name='children', verbose_name='商品分类自关联', on_delete=True)
+    uid = models.UUIDField('分类ID', default=uuid.uuid4, editable=False)
+    parent = models.ForeignKey('self', related_name='children', verbose_name='商品分类自关联', on_delete=models.CASCADE)
     code = models.CharField('编码', max_length=32, null=True, blank=True)
     img = models.ImageField('分类主图', upload_to='classify')
     name = models.CharField('名称', max_length=12)
@@ -75,26 +75,4 @@ class Product(BaseModel):
 
     class Meta:
         db_table = 'mall_product'
-        ordering = ['-reorder']
-
-
-class Comments(BaseModel):
-    """ 商品评价 """
-    product = models.ForeignKey(Product, on_delete=True, related_name='comments', verbose_name='商品')
-    user = models.ForeignKey(User, related_name='comments', verbose_name='用户', on_delete=True)
-    reorder = models.SmallIntegerField('排序', default=0)
-    is_anonymous = models.BooleanField('是否匿名', default=0)
-
-    score = models.FloatField('商品评分', default=10.0)
-    score_deliver = models.FloatField('配送服务分', default=10.0)
-    score_package = models.FloatField('快递包装分', default=10.0)
-    score_speed = models.FloatField('送货速度分', default=10.0)
-
-    is_valid = models.BooleanField('是否有效', default=True)
-    img_list = GenericRelation(ImageFile,
-                               verbose_name='评价晒图',
-                               related_query_name='img_list')
-
-    class Meta:
-        db_table = 'mall_comments'
         ordering = ['-reorder']
