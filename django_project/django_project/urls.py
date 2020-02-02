@@ -25,6 +25,8 @@ urlpatterns = [
     path('mall/', include('mall.urls', namespace='mall')),
     path('index/', views.index, name='index'),
     path('sys/', include('system.urls')),
+    path('study/', include('django_study.urls')),
+    path('accounts/', include('accounts.urls'))
 ]
 
 urlpatterns += [

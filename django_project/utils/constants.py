@@ -53,3 +53,6 @@ ORDER_STATUS_CHOICES = (
     (ORDER_STATUS_DONE, '已完成'),
     (ORDER_STATUS_DELETE, '已删除')
 )
+
+""" 公用常量 """
+LOGIN_USER_ID = 'user_id'

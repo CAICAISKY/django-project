@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'mall.apps.MallConfig',  # 商品模块
     'system.apps.SystemConfig',  # 系统模块
     'mine.apps.MineConfig',  # 个人模块
+    'django_study.apps.DjangoStudyConfig',  # 测试模块
     'debug_toolbar',
 ]
 

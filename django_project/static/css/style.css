@@ -155,7 +155,7 @@ header,.weui-navbar{
 .w-3{width:33.33%;  float:left; padding:.6rem .4rem; box-sizing: border-box; position: relative;}
 
 .category-top{max-width: 768px;transform: translateX(-50%);width:100%;border-bottom:1px solid #e8e8e8;position:fixed; left:50%; top:0; right:0; z-index: 1; background:#F6F6F9}
-.menu-left,.menu-right{position:fixed; left:calc(50%-768px/2);top:44px; bottom:0; overflow-y: scroll;}
+.menu-left,.menu-right{position:fixed; left:calc(50% - 768px/2);top:44px; bottom:0; overflow-y: scroll;}
 .menu-right #loading{left:11px; top:44px;}
 
 .menu-left{background:#F6F6F9;}
@@ -376,4 +376,3 @@ header,.weui-navbar{
 .wy-news-info{color:#333;}
 .commg{margin:0; font-size:14px;}
 .weui-cells.commg:before{display:none;}
-

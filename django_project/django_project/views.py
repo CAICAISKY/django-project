@@ -2,6 +2,7 @@ from datetime import datetime
 
 from django.shortcuts import render
 
+from accounts.models import User
 from system.models import Slider, News
 from utils import constants
 
@@ -16,8 +17,11 @@ def index(request):
         start_time__lte=time_now,
         end_time__gte=time_now
     )
-    print(news_list)
+    # 获取已登陆用户信息
+    user_id = request.session[constants.LOGIN_USER_ID]
+    user = User.objects.get(pk=user_id)
     return render(request, "index.html", {
         'slider_list': slider_list,
-        'news_list': news_list
+        'news_list': news_list,
+        'user': user
     })

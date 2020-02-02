@@ -1,10 +1,12 @@
 from django.core.paginator import Paginator
 from django.db.models import F
+from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, get_list_or_404
 
 # Create your views here.
 from system.models import News
 from utils import constants
+from utils.verify_code import VerifyCode
 
 
 def news_info(request, pk):
@@ -29,3 +31,9 @@ def news_list(request):
     return render(request, 'news_list.html', {
         'page': page
     })
+
+
+def verify_code(request):
+    vc = VerifyCode(request)
+    code_buf = vc.gen_code()
+    return HttpResponse(code_buf.getvalue(), 'image/gif')

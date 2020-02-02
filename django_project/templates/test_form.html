@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang='zh'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $.ajaxSetup({
+            data: {csrfmiddlewaretoken: '{{ csrf_token }}'}
+        });
+        $(function() {
+            $('a').click(function() {
+                $.get(
+                    'http://127.0.0.1:8000/study/test_ajax/',
+                    {name:'schuyler'},
+                    function (rest, status) {
+                        console.log(rest.name, status);
+                    }
+                )
+            });
+        });
+    </script>
+</head>
+<body>
+    <a href="javascript:void(0)">点击</a>
+</body>
+</html>
