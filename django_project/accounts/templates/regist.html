@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 {% block title %}
     <title>手机注册</title>
+    <style>
+        .errorlist {
+            color: red;
+        }
+    </style>
 {% endblock %}
 {% block container %}
     <!--主体-->
@@ -19,6 +24,16 @@
           </div>
         </div>
         {{ form.username.errors }}
+        <div class="weui-cell weui-cell_vcode">
+          <div class="weui-cell__hd">
+            <label class="weui-label wy-lab">昵称</label>
+          </div>
+          <div class="weui-cell__bd">
+            <input class="weui-input" type="text" name="nickname"
+                   value="{{ form.nickname.value|default_if_none:'' }}" placeholder="请输入昵称" />
+          </div>
+        </div>
+        {{ form.nickname.errors }}
         <div class="weui-cell weui-cell_vcode">
           <div class="weui-cell__hd">
             <label class="weui-label wy-lab">验证码</label>

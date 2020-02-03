@@ -138,3 +138,7 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'medias')
+
+
+# 替换原有的用户模型
+AUTH_USER_MODEL = 'accounts.User'

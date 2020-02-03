@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth import authenticate
-from django.contrib.auth.models import User
 
+from accounts.models import User
 from utils.verify_code import VerifyCode
 
 
@@ -60,11 +60,14 @@ class UserRegisterForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ['username', 'password']
+        fields = ['username', 'password', 'nickname']
         error_messages = {
             'username': {
                 'required': '请输入用户名！',
                 'unique': '用户名已存在！'
+            },
+            'nickname': {
+                'required': '请输入昵称！'
             },
             'password': {
                 'required': '请输入密码！'
