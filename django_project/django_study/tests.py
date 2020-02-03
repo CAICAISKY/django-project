@@ -1,3 +1,4 @@
-from django.test import TestCase
+from django.contrib.auth.models import User
 
-# Create your tests here.
+
+user = User.objects.create_superuser('Schuyler', 'caishunweiking@126.com', '123456')

@@ -27,7 +27,11 @@
     <!--主体-->
     <div class="weui-content">
         <!-- 用户欢迎语 -->
-        欢迎您，{{ user.nickname }}
+        {% if user.is_authenticated %}
+            欢迎您，{{ user.username }}
+        {% else %}
+            欢迎您，<a href="{% url 'accounts:user_login' %}">请登录</a>
+        {% endif %}
         <!--顶部轮播-->
         <div class="swiper-container swiper-banner">
             <div class="swiper-wrapper">
