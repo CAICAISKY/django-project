@@ -60,6 +60,15 @@ class UserAddress(BaseModel):
         db_table = 'accounts_user_address'
         ordering = ['is_default', '-updated_at']
 
+    def get_phone_format(self):
+        """ 获取屏蔽后的手机号码 """
+        return self.phone[0: 3] + "****" + self.phone[7:]
+
+    def get_region(self):
+        """ 获取省市区的合拼地址 """
+        region = '{self.province} {self.city} {self.area}'.format(self=self)
+        return region
+
 
 class LoginRecord(models.Model):
     """ 登陆历史 """

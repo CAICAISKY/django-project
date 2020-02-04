@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>地址管理</title>
+{% endblock %}
+{% block container %}
+    <!--主体-->
+    <header class="wy-header">
+      <div class="wy-header-icon-back"><span></span></div>
+      <div class="wy-header-title">地址管理</div>
+    </header>
+
+
+    <div class="weui-content">
+    {% for address in user_address_list %}
+        <div class="weui-panel__bd">
+            <div class="weui-media-box weui-media-box_text address-list-box">
+                <a href="{% url 'accounts:address_edit' address.id %}" class="address-edit"></a>
+                <h4 class="weui-media-box__title">
+                    <span>{{ address.username }}</span>
+                    <span>{{ address.get_phone_format }}</span>
+                </h4>
+                <p class="weui-media-box__desc address-txt">
+                    {{ address.get_region }}
+                    {{ address.address }}
+                </p>
+                {% if address.is_default %}
+                    <span class="default-add">默认地址</span>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    <div class="weui-btn-area">
+        <a class="weui-btn weui-btn_primary" href="{% url 'accounts:address_edit' 'new'%}" id="showTooltips">添加收货地址</a>
+    </div>
+{% endblock %}
+

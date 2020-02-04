@@ -1,8 +1,10 @@
 from django.contrib.auth import authenticate, login, logout
-from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse
+from django.shortcuts import render, redirect, get_object_or_404
 
-from accounts.forms import UserLoginForm, UserRegisterForm
-from accounts.models import User
+from accounts.forms import UserLoginForm, UserRegisterForm, UserAddressForm
+from accounts.models import User, UserAddress
 from utils.verify_code import VerifyCode
 
 
@@ -52,22 +54,60 @@ def user_register(request):
         })
 
 
+@login_required
 def password_change(request):
     """ 密码修改 """
     result = ''
     if request.method == 'POST':
         vc = VerifyCode(request)
         vcode = request.POST.get('vcode')
-        user = request.user
-        if user.is_authenticated:
-            if vc.validate_code(vcode):
-                new_password = request.POST.get('password')
-                user.set_password(new_password)
-                return redirect('index')
-            else:
-                result = '验证码错误！'
+        if vc.validate_code(vcode):
+            user = request.user
+            new_password = request.POST.get('password')
+            user.set_password(new_password)
+            return redirect('index')
         else:
-            result = '用户未登录'
+                result = '验证码错误！'
     return render(request, 'pwd_change.html', {
         'result': result
     })
+
+
+@login_required
+def address_list(request):
+    """ 地址列表 """
+    user_address_list = UserAddress.objects.filter(is_valid=True, user=request.user)
+
+    return render(request, 'address_list.html', {
+        'user_address_list': user_address_list
+    })
+
+
+@login_required
+def address_edit(request, pk):
+    """ 地址修改/新增 """
+    user_address = None
+    initial = {}
+    if pk.isdigit():
+        """ 当传入了主键后 """
+        user_address = get_object_or_404(UserAddress, pk=pk, user=request.user, is_valid=True)
+        initial['region'] = user_address.get_region()
+    if request.method == 'POST':
+        form = UserAddressForm(request=request, data=request.POST, instance=user_address, initial=initial)
+        if form.is_valid():
+            form.save()
+            return redirect('accounts:address_list')
+    else:
+        form = UserAddressForm(request=request, instance=user_address, initial=initial)
+    return render(request, 'address_edit.html', {
+        'form': form
+    })
+
+
+@login_required
+def address_delete(request, pk):
+    """ 删除地址 """
+    address = get_object_or_404(UserAddress, pk=pk, is_valid=True, user=request.user)
+    address.is_valid = False
+    address.save()
+    return HttpResponse('ok')

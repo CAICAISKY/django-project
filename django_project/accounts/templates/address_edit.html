@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>编辑地址</title>
+    <style>
+        .errorlist {
+            color: red;
+        }
+    </style>
+{% endblock %}
+{% block container %}
+    <!--主体-->
+<header class="wy-header">
+    <div class="wy-header-icon-back"><span></span></div>
+    <div class="wy-header-title">编辑地址</div>
+</header>
+<form class="weui-content" method="post" action="{% url 'accounts:address_edit' form.instance.id%}">
+    <div class="weui-cells weui-cells_form wy-address-edit">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label wy-lab">收货人</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input
+                    class="weui-input"
+                    type="text"
+                    placeholder="收件人"
+                    name="username"
+                    value="{{ form.username.value|default_if_none:'' }}"
+                />
+            </div>
+        </div>
+        {{ form.username.errors }}
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label wy-lab">手机号</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input
+                    class="weui-input"
+                    type="number"
+                    pattern="[0-9]*"
+                    name="phone"
+                    value="{{ form.phone.value|default_if_none:'' }}"
+                    placeholder="手机号码"  />
+            </div>
+        </div>
+        {{ form.phone.errors }}
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label for="name" class="weui-label wy-lab">所在地区</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input
+                    class="weui-input"
+                    id="address" type="text"
+                    name="region"
+                    value="{{ form.region.value|default_if_none:'' }}"
+                    readonly=""
+                />
+            </div>
+        </div>
+        {{ form.region.errors }}
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label wy-lab">详细地址</label>
+            </div>
+            <div class="weui-cell__bd">
+                <textarea class="weui-textarea" name="address" placeholder="详细住址">
+                    {{ form.address.value|default_if_none:'' }}
+                </textarea>
+            </div>
+        </div>
+        {{ form.address.errors }}
+        <div class="weui-cell weui-cell_switch">
+            <div class="weui-cell__bd">设为默认地址</div>
+            <div class="weui-cell__ft">
+                {{ form.is_default }}
+            </div>
+        </div>
+    </div>
+    {{ form.non_field_errors }}
+    {% csrf_token %}
+    <div class="weui-btn-area">
+        <input class="weui-btn weui-btn_primary" type="submit" value="保存此地址">
+        {% if form.instance.id %}
+            <a href="javascript:;" id='address_delete' class="weui-btn weui-btn_warn">删除此地址</a>
+        {% endif %}
+    </div>
+</form>
+{% endblock %}
+{% block footer %}
+    <script type="text/javascript" src="/static/js/jquery.Spinner.js"></script>
+    <script src="/static/js/city-picker.js"></script>
+    <script>
+        $('#address').cityPicker({
+          title: '选择出发地',
+          onChange: function(picker, values, displayValues) {
+            console.log(values, displayValues);
+          }
+        });
+        $('#address_delete').click(function() {
+           if(window.confirm("确定要删除该地址吗？")) {
+               $.post(
+                   "{% url 'accounts:address_delete' form.instance.id|default_if_none:'new' %}",
+                   { csrfmiddlewaretoken: '{{ csrf_token }}' },
+                   function(rest, status) {
+                       if (status === 'success') {
+                           if (rest === "ok") {
+                               location.href='{% url 'accounts:address_list' %}';
+                           }
+                       }
+                   }
+               )
+           }
+        })
+    </script>
+{% endblock %}
