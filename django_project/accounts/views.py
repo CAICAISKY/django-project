@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 
 from accounts.forms import UserLoginForm, UserRegisterForm
 from accounts.models import User
+from utils.verify_code import VerifyCode
 
 
 def user_login(request):
@@ -49,3 +50,24 @@ def user_register(request):
     return render(request, 'regist.html', {
             'form': form
         })
+
+
+def password_change(request):
+    """ 密码修改 """
+    result = ''
+    if request.method == 'POST':
+        vc = VerifyCode(request)
+        vcode = request.POST.get('vcode')
+        user = request.user
+        if user.is_authenticated:
+            if vc.validate_code(vcode):
+                new_password = request.POST.get('password')
+                user.set_password(new_password)
+                return redirect('index')
+            else:
+                result = '验证码错误！'
+        else:
+            result = '用户未登录'
+    return render(request, 'pwd_change.html', {
+        'result': result
+    })

@@ -97,4 +97,3 @@ class UserRegisterForm(forms.ModelForm):
         if not vc.validate_code(code=vcode):
             raise forms.ValidationError('验证码不正确！')
         return vcode
-
