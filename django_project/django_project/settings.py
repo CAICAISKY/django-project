@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -142,3 +143,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'medias')
 
 # 替换原有的用户模型
 AUTH_USER_MODEL = 'accounts.User'
+
+LOGIN_URL = '/accounts/login/'

@@ -10,6 +10,7 @@ from utils.verify_code import VerifyCode
 
 def user_login(request):
     """ 用户登陆视图 """
+    next = request.GET.get('next', None)
     form = UserLoginForm(request)
     if request.method == 'POST':
         form = UserLoginForm(request, data=request.POST)
@@ -22,16 +23,19 @@ def user_login(request):
             """ 使用django的auth模块进行用户登录 """
             user = authenticate(username=data['username'], password=data['password'])
             login(request, user)
-            return redirect('index')
+            url = 'index'
+            if next:
+                url = next
+            return redirect(url)
         else:
             print(form.errors)
-    return render(request, 'login.html', {'form': form})
+    return render(request, 'login.html', {'form': form, 'next': next})
 
 
 def user_logout(request):
     """ 用户退出 """
     logout(request)
-    return  redirect('index')
+    return redirect('index')
 
 
 def user_register(request):
