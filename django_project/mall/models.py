@@ -59,7 +59,7 @@ class Product(BaseModel):
     )
     price = models.IntegerField('兑换价格(积分兑换)')
     origin_price = models.FloatField('原价')
-    img = models.ImageField('主图', upload_to='product')
+    img = models.ImageField('主图', upload_to='%Y%m/product')
     buy_link = models.CharField('购买连接', max_length=256, null=True, blank=True)
     reorder = models.SmallIntegerField('排序', default=0)
     status = models.SmallIntegerField(
@@ -67,6 +67,12 @@ class Product(BaseModel):
         choices=constants.PRODUCT_STATUS_CHOICES,
         default=constants.PRODUCT_STATUS_OFF
     )
+
+    sku_count = models.IntegerField('库存', default=0)
+    ramain_count = models.IntegerField('剩余库存', default=0)
+    view_count = models.IntegerField('浏览次数', default=0)
+    score = models.FloatField('商品的评分', default=10.0)
+
     is_valid = models.BooleanField('是否有效', default=True)
 
     tags = models.ManyToManyField(Tag, verbose_name='标签', related_name='tags', blank=True)
