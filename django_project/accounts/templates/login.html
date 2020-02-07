@@ -14,7 +14,7 @@
     <div class="login-box">
         <div class="lg-title">欢迎登陆积分商城</div>
         <div class="login-form">
-            <form action="{% url 'accounts:user_login' %}?next={{ next }}" method="post">
+            <form action="{% url 'accounts:user_login' %}?next={{ next|default_if_none:'' }}" method="post">
                 <div class="login-user-name common-div">
                     <span class="eamil-icon common-icon">
                         <img src="/static/images/eamil.png" />
