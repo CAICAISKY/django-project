@@ -24,13 +24,14 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('mall/', include('mall.urls', namespace='mall')),
     path('index/', views.index, name='index'),
+    path('', views.index),
     path('sys/', include('system.urls')),
     path('study/', include('django_study.urls')),
     path('accounts/', include('accounts.urls'))
 ]
 
 urlpatterns += [
-    re_path(r'^media/(?P<path>.*)$', serve, {
+    re_path(r'^medias/(?P<path>.*)$', serve, {
         'document_root': settings.MEDIA_ROOT
     })
 ]

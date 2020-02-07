@@ -13,8 +13,9 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+import sys
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -42,8 +43,10 @@ INSTALLED_APPS = [
     'mall.apps.MallConfig',  # 商品模块
     'system.apps.SystemConfig',  # 系统模块
     'mine.apps.MineConfig',  # 个人模块
-    'django_study.apps.DjangoStudyConfig',  # 测试模块
     'debug_toolbar',
+    # 富文本编辑器
+    'ckeditor',
+    'ckeditor_uploader'
 ]
 
 MIDDLEWARE = [
@@ -89,6 +92,10 @@ DATABASES = {
         'PASSWORD': 'root',
         'HOST': '127.0.0.1',
         'PORT': '3306',
+        # 后天管理系统消除外键校验异常问题
+        'OPTIONS': {
+            "init_command": "SET foreign_key_checks = 0;",
+        }
     }
 }
 
@@ -137,11 +144,14 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
 
-MEDIA_URL = '/media/'
+MEDIA_URL = '/medias/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'medias')
-
 
 # 替换原有的用户模型
 AUTH_USER_MODEL = 'accounts.User'
 
+# 登录页面配置
 LOGIN_URL = '/accounts/login/'
+
+# ckeditor模块的图片上传路径配置
+CKEDITOR_UPLOAD_PATH = os.path.join(MEDIA_ROOT, 'uploads')

@@ -13,6 +13,7 @@ mysql-connector-python = "*"
 mysqlclient = "*"
 django-debug-toolbar = "*"
 pillow = "*"
+django-ckeditor = "*"
 
 [requires]
 python_version = "3.7"

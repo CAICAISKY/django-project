@@ -51,7 +51,7 @@ class Product(BaseModel):
     uid = models.UUIDField('商品id', default=uuid.uuid4(), editable=False)
     name = models.CharField('商品名称', max_length=128)
     desc = models.CharField('简单描述', max_length=256, null=True, blank=True)
-    content = models.TextField('商品描述')
+    content = models.TextField('商品描述', null=True, blank=True)
     types = models.SmallIntegerField(
         '商品类型',
         choices=constants.PRODUCT_TYPES_CHOICES,

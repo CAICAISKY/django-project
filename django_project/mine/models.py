@@ -39,6 +39,8 @@ class Order(BaseModel):
 
     class Meta:
         db_table = 'mine_order'
+        verbose_name = '订单'
+        verbose_name_plural = '订单'
 
 
 class Cart(BaseModel):
@@ -62,6 +64,8 @@ class Cart(BaseModel):
 
     class Meta:
         db_table = 'mine_cart'
+        verbose_name = '购物车'
+        verbose_name_plural = '购物车'
 
 
 class Comments(BaseModel):
@@ -86,3 +90,5 @@ class Comments(BaseModel):
     class Meta:
         db_table = 'mine_product_comments'
         ordering = ['-reorder']
+        verbose_name = '商品评价'
+        verbose_name_plural = '商品评价'

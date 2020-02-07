@@ -2,8 +2,614 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a4654d0-fb4e-4316-bc5c-da8e8d920fa5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/.tx/config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/adminx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/filters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/layout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/de_DE/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/de_DE/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/de_DE/LC_MESSAGES/djangojs.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/de_DE/LC_MESSAGES/djangojs.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/en/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/en/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/en/LC_MESSAGES/djangojs.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/en/LC_MESSAGES/djangojs.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/es_MX/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/es_MX/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/es_MX/LC_MESSAGES/djangojs.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/es_MX/LC_MESSAGES/djangojs.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/eu/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/eu/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/eu/LC_MESSAGES/djangojs.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/eu/LC_MESSAGES/djangojs.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/id_ID/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/id_ID/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/id_ID/LC_MESSAGES/djangojs.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/id_ID/LC_MESSAGES/djangojs.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/ja/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/ja/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/ja/LC_MESSAGES/djangojs.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/ja/LC_MESSAGES/djangojs.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/lt/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/lt/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/lt/LC_MESSAGES/djangojs.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/lt/LC_MESSAGES/djangojs.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/nl_NL/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/nl_NL/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/nl_NL/LC_MESSAGES/djangojs.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/nl_NL/LC_MESSAGES/djangojs.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/pl/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/pl/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/pl/LC_MESSAGES/djangojs.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/pl/LC_MESSAGES/djangojs.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/pt_BR/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/pt_BR/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/pt_BR/LC_MESSAGES/djangojs.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/pt_BR/LC_MESSAGES/djangojs.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/ru_RU/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/ru_RU/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/ru_RU/LC_MESSAGES/djangojs.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/ru_RU/LC_MESSAGES/djangojs.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/zh_Hans/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/zh_Hans/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/zh_Hans/LC_MESSAGES/djangojs.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/locale/zh_Hans/LC_MESSAGES/djangojs.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/migrations/0002_log.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/migrations/0003_auto_20160715_0100.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/actions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/aggregation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/ajax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/batch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/bookmark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/chart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/comments.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/details.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/editable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/export.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/filters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/images.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/importexport.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/inline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/language.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/layout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/mobile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/multiselect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/passwords.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/portal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/quickfilter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/quickform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/refresh.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/relate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/relfield.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/sitemenu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/sortablelist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/themes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/topnav.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/wizard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/plugins/xversion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/sites.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/themes/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/themes/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/themes/bootstrap-xadmin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.page.dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.plugin.aggregation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.plugin.formset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.plugin.importexport.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.plugin.quickfilter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.plugins.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.widget.editable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/css/xadmin.widget.select-transfer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.page.dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.page.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.page.list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.batch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.bookmark.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.editable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.filters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.formset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.importexport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.portal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.quick-form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.quickfilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.refresh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.revision.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.sortablelist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.plugin.themes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.responsive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.widget.datetime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.widget.multiselect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.widget.select-transfer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/js/xadmin.widget.select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/autotype/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.kr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.rs-latin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.rs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.sw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-image-gallery/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-modal/css/bootstrap-modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-modal/img/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-modal/js/bootstrap-modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-modal/js/bootstrap-modalmanager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-multiselect/css/bootstrap-multiselect.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-multiselect/js/bootstrap-multiselect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-timepicker/css/bootstrap-timepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-timepicker/css/bootstrap-timepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-timepicker/js/bootstrap-timepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap-timepicker/js/bootstrap-timepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/excanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/excanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.colorhelpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.aggregate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.categories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.crosshair.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.errorbars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.fillbetween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.navigate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.selection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.symbol.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.threshold.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/flot/jquery.flot.time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.core.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.effect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.effect.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.mouse.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.sortable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.widget.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/jquery-ui/jquery.ui.widget.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/load-image/load-image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/load-image/load-image.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2-spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_pt-BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_pt-PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_ua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2_locale_zh-hans.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/select2/select2x2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/selectize/selectize.bootstrap2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/selectize/selectize.bootstrap3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/selectize/selectize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/selectize/selectize.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/selectize/selectize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/selectize/selectize.legacy.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/selectize/selectize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/snapjs/snap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/snapjs/snap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/static/xadmin/vendor/snapjs/snap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/auth/password_reset/complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/auth/password_reset/confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/auth/password_reset/done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/auth/password_reset/email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/auth/password_reset/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/auth/user/add_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/auth/user/change_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/base_site.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/comm.top.setlang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/comm.top.theme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/comm.top.topnav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/modal_list.left_navbar.quickfilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/model_form.before_fieldsets.wizard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/model_form.submit_line.wizard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/model_list.nav_form.search_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/model_list.nav_menu.bookmarks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/model_list.nav_menu.filters.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/model_list.results_bottom.actions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/model_list.results_top.charts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/model_list.results_top.date_hierarchy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/model_list.top_toolbar.exports.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/model_list.top_toolbar.importexport.export.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/model_list.top_toolbar.importexport.import.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/model_list.top_toolbar.layouts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/model_list.top_toolbar.refresh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/blocks/model_list.top_toolbar.saveorder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/edit_inline/accordion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/edit_inline/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/edit_inline/blank.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/edit_inline/one.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/edit_inline/stacked.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/edit_inline/tab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/edit_inline/tabular.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/filters/char.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/filters/checklist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/filters/date.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/filters/fk_search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/filters/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/filters/number.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/filters/quickfilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/filters/rel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/forms/transfer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/grids/thumbnails.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/import_export/export_action.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/import_export/import.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/includes/box.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/includes/pagination.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/includes/sitemenu_accordion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/includes/sitemenu_default.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/includes/submit_line.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/includes/toggle_back.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/includes/toggle_menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/layout/field_value.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/layout/field_value_td.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/layout/fieldset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/layout/input_group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/layout/td-field.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/app_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/batch_change_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/invalid_setup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/logged_out.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_delete_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_delete_selected_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/model_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/quick_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/quick_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/recover_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/recover_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/revision_diff.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/views/revision_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/widgets/addform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/widgets/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/widgets/chart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/widgets/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templates/xadmin/widgets/qbutton.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/templatetags/xadmin_tags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/vendors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/dashboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/delete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/detail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/edit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/views/website.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extra_apps/xadmin/widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/bin/pip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/bin/pip3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/bin/pip3.7" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/bin/pip3.7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/Jinja2-2.10.3.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/Jinja2-2.10.3.dist-info/LICENSE.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/Jinja2-2.10.3.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/Jinja2-2.10.3.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/Jinja2-2.10.3.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/Jinja2-2.10.3.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/Jinja2-2.10.3.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/management/commands/debugsqlshell.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/management/commands/debugsqlshell.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/middleware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/panels/redirects.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/panels/redirects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/panels/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/panels/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/panels/sql/tracking.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/panels/sql/tracking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/static/debug_toolbar/css/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/static/debug_toolbar/css/toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/static/debug_toolbar/js/toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/static/debug_toolbar/js/toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/static/debug_toolbar/js/toolbar.profiling.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/static/debug_toolbar/js/toolbar.sql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/profiling.html" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/profiling.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/sql.html" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/sql.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/sql_explain.html" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/sql_explain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/sql_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/sql_profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/sql_select.html" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/templates/debug_toolbar/panels/sql_select.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/debug_toolbar/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django_debug_toolbar-2.1.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django_debug_toolbar-2.1.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django_debug_toolbar-2.1.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django_debug_toolbar-2.1.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django_debug_toolbar-2.1.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django_debug_toolbar-2.1.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django_debug_toolbar-2.1.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/_compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/_compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/_identifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/_identifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/asyncfilters.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/asyncfilters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/asyncsupport.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/asyncsupport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/bccache.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/bccache.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/compiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/compiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/debug.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/debug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/defaults.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/defaults.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/ext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/idtracking.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/idtracking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/lexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/lexer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/loaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/loaders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/meta.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/meta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/nativetypes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/nativetypes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/nodes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/optimizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/optimizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/runtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/runtime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/sandbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/sandbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/visitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/jinja2/visitor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip-19.3.1.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip-19.3.1.dist-info/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip-19.3.1.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip-19.3.1.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip-19.3.1.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip-19.3.1.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip-19.3.1.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/build_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/build_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/cache.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/cli/autocompletion.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/cli/autocompletion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/cli/base_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/cli/base_command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/cli/cmdoptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/cli/cmdoptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/cli/command_context.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/cli/command_context.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/cli/req_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/cli/req_command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/collector.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/commands/debug.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/commands/debug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/commands/download.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/commands/download.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/commands/install.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/commands/install.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/commands/list.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/commands/list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/commands/wheel.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/commands/wheel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/configuration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/distributions/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/distributions/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/distributions/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/distributions/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/distributions/installed.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/distributions/installed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/distributions/source/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/distributions/source/legacy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/distributions/wheel.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/distributions/wheel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/download.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/legacy_resolve.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/legacy_resolve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/locations.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/locations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/models/candidate.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/models/candidate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/models/format_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/models/format_control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/models/link.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/models/link.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/models/search_scope.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/models/search_scope.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/models/target_python.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/models/target_python.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/network/cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/network/cache.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/network/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/network/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/operations/check.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/operations/check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/operations/freeze.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/operations/freeze.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/operations/generate_metadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/operations/prepare.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/operations/prepare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/pep425tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/pep425tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/pyproject.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/pyproject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/req/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/req/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/req/constructors.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/req/constructors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/req/req_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/req/req_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/req/req_install.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/req/req_install.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/req/req_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/req/req_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/req/req_tracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/req/req_tracker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/req/req_uninstall.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/req/req_uninstall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/self_outdated_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/self_outdated_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/appdirs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/filesystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/filesystem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/glibc.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/glibc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/hashes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/hashes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/marker_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/marker_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/misc.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/misc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/setuptools_build.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/setuptools_build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/subprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/subprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/temp_dir.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/temp_dir.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/typing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/typing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/virtualenv.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/utils/virtualenv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/vcs/git.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/vcs/git.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/vcs/versioncontrol.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/vcs/versioncontrol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_internal/wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/appdirs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/cachecontrol/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/cachecontrol/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/cachecontrol/adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/cachecontrol/adapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/cachecontrol/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/cachecontrol/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/cachecontrol/serialize.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/cachecontrol/serialize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/cachecontrol/wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/cachecontrol/wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/certifi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/certifi/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/certifi/cacert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/certifi/cacert.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/colorama/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/colorama/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/_backport/sysconfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/_backport/sysconfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/scripts.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/scripts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/t32.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/t32.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/t64.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/t64.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/w32.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/w32.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/w64.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/w64.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/wheel.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/distlib/wheel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/ipaddress.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/ipaddress.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/__about__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/__about__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/_compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/_compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/_structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/_structures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/markers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/markers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/requirements.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/requirements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/specifiers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/specifiers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/packaging/version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/pkg_resources/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/pkg_resources/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/pyparsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/pyparsing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/six.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/six.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/connectionpool.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/connectionpool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/_appengine_environ.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/_appengine_environ.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/_securetransport/bindings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/appengine.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/appengine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/ntlmpool.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/ntlmpool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/securetransport.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/contrib/securetransport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/util/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/util/connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/util/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/util/request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/util/timeout.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/util/timeout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/util/url.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pip/_vendor/urllib3/util/url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pkg_resources/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/pkg_resources/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools-44.0.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools-44.0.0.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools-44.0.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools-44.0.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools-44.0.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools-44.0.0.dist-info/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools-44.0.0.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools-44.0.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools-44.0.0.dist-info/zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/build_meta.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/build_meta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/command/build_ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/command/build_ext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/command/develop.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/command/develop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/command/easy_install.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/command/easy_install.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/command/egg_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/command/egg_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/command/sdist.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/command/sdist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/command/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/command/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/command/upload_docs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/command/upload_docs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/dist.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/setuptools/dist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/uuid-1.30.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/uuid-1.30.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/uuid-1.30.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/uuid-1.30.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/uuid-1.30.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/uuid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel-0.33.6.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel-0.33.6.dist-info/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel-0.33.6.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel-0.33.6.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel-0.33.6.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel-0.33.6.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel-0.33.6.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel/bdist_wheel.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel/bdist_wheel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel/cli/pack.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel/cli/pack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel/metadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel/metadata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel/pep425tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel/pep425tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel/wheelfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/wheel/wheelfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_study/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_study/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mall/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mall/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mine/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mine/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mine/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mine/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mine/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mine/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,22 +632,23 @@
     <session id="1622021595">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
-          <entry key="project.open.time.0" value="4" />
+          <entry key="project.closed" value="12" />
+          <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="4" />
           <entry key="HTML" value="63" />
-          <entry key="Image" value="4" />
+          <entry key="Image" value="7" />
           <entry key="JavaScript" value="1" />
-          <entry key="Python" value="251" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="287" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -49,7 +656,7 @@
           <entry key="CSS" value="96" />
           <entry key="HTML" value="7216" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="46133" />
+          <entry key="Python" value="47343" />
           <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
@@ -57,31 +664,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mall/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django_project/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mall/views.py">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
-                <element signature="e#26#56#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mine/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_project/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="713">
+              <caret line="146" column="22" lean-forward="true" selection-end-line="157" />
+              <folding>
+                <element signature="e#315#324#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,8 +703,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mall/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="165">
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -99,11 +712,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/accounts/templates/login.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mall/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="16" column="88" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
+            <state relative-caret-position="330">
+              <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/forms/fields.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="208" column="8" selection-start-line="208" selection-start-column="8" selection-end-line="208" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -171,10 +796,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/base2.html" />
-        <option value="$PROJECT_DIR$/templates/test.html" />
-        <option value="$PROJECT_DIR$/weibo/test.py" />
-        <option value="$PROJECT_DIR$/django_project/__init__.py" />
         <option value="$PROJECT_DIR$/weibo/tests.py" />
         <option value="$PROJECT_DIR$/utils/page.py" />
         <option value="$PROJECT_DIR$/weibo/models.py" />
@@ -187,7 +808,6 @@
         <option value="$PROJECT_DIR$/system/templates/news_list.html" />
         <option value="$PROJECT_DIR$/accounts/tests.py" />
         <option value="$PROJECT_DIR$/system/models.py" />
-        <option value="$PROJECT_DIR$/mine/models.py" />
         <option value="$PROJECT_DIR$/django_study/migrations/forms.py" />
         <option value="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/forms/fields.py" />
         <option value="$PROJECT_DIR$/django_study/forms.py" />
@@ -197,7 +817,6 @@
         <option value="$PROJECT_DIR$/django_study/views.py" />
         <option value="$PROJECT_DIR$/system/views.py" />
         <option value="$PROJECT_DIR$/utils/verify_code.py" />
-        <option value="$PROJECT_DIR$/django_project/urls.py" />
         <option value="$PROJECT_DIR$/system/urls.py" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/utils/constants.py" />
@@ -214,14 +833,20 @@
         <option value="$PROJECT_DIR$/accounts/templates/address_edit.html" />
         <option value="$PROJECT_DIR$/accounts/templates/address_list.html" />
         <option value="$PROJECT_DIR$/accounts/views.py" />
-        <option value="$PROJECT_DIR$/mall/models.py" />
         <option value="$PROJECT_DIR$/mall/urls.py" />
         <option value="$USER_HOME$/Downloads/第3章 django 表单/第5章源码/django_mall/mall/views.py" />
         <option value="$PROJECT_DIR$/mall/views.py" />
         <option value="$PROJECT_DIR$/mall/templates/product_page_list.html" />
         <option value="$PROJECT_DIR$/mall/templates/product_list.html" />
-        <option value="$PROJECT_DIR$/django_project/settings.py" />
         <option value="$PROJECT_DIR$/accounts/templates/login.html" />
+        <option value="$PROJECT_DIR$/django_study/admin.py" />
+        <option value="$PROJECT_DIR$/mine/apps.py" />
+        <option value="$PROJECT_DIR$/mine/models.py" />
+        <option value="$PROJECT_DIR$/mine/admin.py" />
+        <option value="$PROJECT_DIR$/django_project/settings.py" />
+        <option value="$PROJECT_DIR$/django_project/urls.py" />
+        <option value="$PROJECT_DIR$/mall/admin.py" />
+        <option value="$PROJECT_DIR$/mall/models.py" />
       </list>
     </option>
   </component>
@@ -244,7 +869,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,28 +879,47 @@
             <path>
               <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="django_project" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_project" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_project" type="462c0819:PsiDirectoryNode" />
               <item name="django_project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="django_project" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="extra_apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django_project" type="462c0819:PsiDirectoryNode" />
+              <item name="medias" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django_project" type="462c0819:PsiDirectoryNode" />
+              <item name="medias" type="462c0819:PsiDirectoryNode" />
+              <item name="201902" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django_project" type="462c0819:PsiDirectoryNode" />
+              <item name="medias" type="462c0819:PsiDirectoryNode" />
+              <item name="201902" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django_project" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django_project" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="upload" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,19 +930,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/extra_apps" />
+      <recent name="$PROJECT_DIR$/medias" />
+      <recent name="$PROJECT_DIR$/accounts" />
+      <recent name="$PROJECT_DIR$/accounts/templates" />
+      <recent name="$PROJECT_DIR$/static/fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/accounts/templates" />
       <recent name="$PROJECT_DIR$/django_study" />
       <recent name="$PROJECT_DIR$/system/templates" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/mall" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/medias" />
-      <recent name="$PROJECT_DIR$/accounts" />
-      <recent name="$PROJECT_DIR$/accounts/templates" />
-      <recent name="$PROJECT_DIR$/static/fonts" />
-      <recent name="$PROJECT_DIR$/templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -493,13 +1136,12 @@
     <frame x="0" y="23" width="1440" height="838" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4992636" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" visible="true" weight="0.31367293" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49642345" visible="true" weight="0.22117962" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -507,10 +1149,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5028612" side_tool="true" weight="0.47855228" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5035765" side_tool="true" weight="0.31367293" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.8741059" weight="0.33646113" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49642345" weight="0.32841823" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3297587" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -550,13 +1193,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/forms/forms.py</url>
-          <line>389</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -567,166 +1203,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/images/eamil.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="44" column="53" lean-forward="true" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/verify_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="35" column="50" lean-forward="true" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/jquery-weui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="1468" selection-start-line="18" selection-start-column="1468" selection-end-line="18" selection-end-column="1468" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="378" selection-start-line="378" selection-end-line="378" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_study/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_project/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/1296683793/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="2860" column="8" selection-start-line="2860" selection-start-column="8" selection-end-line="2860" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/contrib/auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="304" column="19" selection-start-line="304" selection-start-column="13" selection-end-line="304" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_study/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/templates/regist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/MySQLdb/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="178" selection-start-line="178" selection-end-line="178" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_study/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/contrib/auth/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="44" column="27" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/templates/pwd_change.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/forms/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/forms/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/mine.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-664" />
@@ -778,19 +1254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -801,55 +1264,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mine/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="68" column="89" selection-start-line="68" selection-start-column="81" selection-end-line="68" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-570">
-          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/views/generic/list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="61" column="35" lean-forward="true" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/views/generic/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/views/generic/list.py" />
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/views/generic/base.py" />
     <entry file="file://$USER_HOME$/Downloads/第3章 django 表单/第5章源码/django_mall/mall/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="e#26#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,10 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
-          <folding>
-            <element signature="n#style#0;n#label#0;n#form#0;n#div#0;n#header#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -878,16 +1294,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_project/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -895,40 +1301,246 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/db/models/fields/related.py" />
+    <entry file="file://$PROJECT_DIR$/mall/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/db/models/fields/related.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="799" selection-start-line="799" selection-end-line="799" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_project/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="133" column="23" lean-forward="true" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#26#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="16" column="88" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
+        <state relative-caret-position="390">
+          <caret line="26" column="65" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/utils/autoreload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="227" selection-start-line="227" selection-end-line="227" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/core/management/commands/runserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/core/management/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="345" selection-start-line="345" selection-end-line="345" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/core/checks/registry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/core/checks/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/.tx/config">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/utils/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/urls/resolvers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="583" selection-start-line="583" selection-end-line="583" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/lib/python3.7/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="925" selection-start-line="925" selection-end-line="925" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra_apps/xadmin/sites.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/utils/module_loading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_study/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/db/models/deletion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="223" selection-start-line="223" selection-end-line="223" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medias/201902/product/b11.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medias/201902/product/g11.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medias/11.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mine/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_project/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="40" column="19" lean-forward="true" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+          <folding>
+            <element signature="e#639#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/ckeditor/widgets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mine/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="86" column="51" lean-forward="true" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/forms/fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="208" column="8" selection-start-line="208" selection-start-column="8" selection-end-line="208" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="146" column="22" lean-forward="true" selection-end-line="157" />
+          <folding>
+            <element signature="e#315#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mine/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
