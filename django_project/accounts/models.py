@@ -22,6 +22,7 @@ class User(AbstractUser):
     integral = models.IntegerField('用户积分', default=0)
     nickname = models.CharField('昵称', max_length=32)
     level = models.SmallIntegerField('用户级别', default=1)
+    is_valid = models.BooleanField('是否有效', default=1)
 
     class Meta:
         db_table = 'accounts_user'

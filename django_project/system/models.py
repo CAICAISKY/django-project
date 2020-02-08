@@ -4,6 +4,7 @@ from django.db import models
 
 from utils import constants
 
+
 class BaseModel(models.Model):
     """ 基础模型 """
     created_at = models.DateTimeField('创建时间', auto_now_add=True)
@@ -33,10 +34,12 @@ class Slider(BaseModel):
     class Meta:
         db_table = 'system_slider'
         ordering = ['-reorder']
+        verbose_name = '轮播图'
+        verbose_name_plural = '轮播图'
 
 
 class News(BaseModel):
-    """ 新闻即通知 """
+    """ 新闻及通知 """
     types = models.SmallIntegerField(
         '类型',
         choices=constants.NEWS_TYPES_CHOICES,
@@ -55,6 +58,8 @@ class News(BaseModel):
     class Meta:
         db_table = 'system_news'
         ordering = ['-reorder']
+        verbose_name = '新闻/通知'
+        verbose_name_plural = '新闻/通知'
 
 
 class ImageFile(BaseModel):
@@ -71,3 +76,5 @@ class ImageFile(BaseModel):
 
     class Meta:
         db_table = 'system_images'
+        verbose_name = '图片库'
+        verbose_name_plural = '图片库'
