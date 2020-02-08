@@ -1,6 +1,5 @@
 import uuid as uuid
 
-from ckeditor_uploader.fields import RichTextUploadingField
 from django.contrib.contenttypes.fields import GenericRelation
 from django.db import models
 
@@ -49,6 +48,7 @@ class Tag(BaseModel):
 
 class Product(BaseModel):
     """ 商品模块 """
+    # 商品模块的主键id不应该暴露出来，容易被别人爬取商品数据，因此设置一个uid字段来作为索引
     uid = models.UUIDField('商品id', default=uuid.uuid4(), editable=False)
     name = models.CharField('商品名称', max_length=128)
     desc = models.CharField('简单描述', max_length=256, null=True, blank=True)
