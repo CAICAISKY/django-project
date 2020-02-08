@@ -83,3 +83,6 @@ class Product(BaseModel):
     class Meta:
         db_table = 'mall_product'
         ordering = ['-reorder']
+        verbose_name = '商品'
+        verbose_name_plural = '商品'
+
