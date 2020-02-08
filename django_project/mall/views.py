@@ -1,6 +1,6 @@
 # Create your views here.
 from django.db.models import Q
-from django.shortcuts import render_to_response, render
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView
 
 from mall.models import Product
@@ -19,19 +19,10 @@ def product_list(request):
     })
 
 
-def product_detail(request, pk, template_name='product_detail.html'):
-    return render_to_response(template_name)
-
-
-def filter_test(request):
-    data = {
-        'data_list': [
-            '第一行',
-            '第二行',
-            '第三行'
-        ]
-    }
-    return render(request, 'test_form.html', data)
+def product_detail(request, uid):
+    """ 商品详情 """
+    product = get_object_or_404(Product, uid=uid, is_valid=True)
+    return render(request, 'product_detail.html', {'product': product})
 
 
 class ProduceListView(ListView):
