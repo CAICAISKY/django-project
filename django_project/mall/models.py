@@ -1,5 +1,6 @@
 import uuid as uuid
 
+from ckeditor_uploader.fields import RichTextUploadingField
 from django.contrib.contenttypes.fields import GenericRelation
 from django.db import models
 

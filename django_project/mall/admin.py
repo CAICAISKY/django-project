@@ -1,8 +1,7 @@
-from ckeditor.widgets import CKEditorWidget
-from django.contrib import admin
-
+from ckeditor_uploader.widgets import CKEditorUploadingWidget
 # Register your models here.
 from django import forms
+from django.contrib import admin
 
 from mall.models import Product
 
@@ -12,7 +11,7 @@ admin.site.index_title = "欢迎您"
 
 
 class ProductAdminForm(forms.ModelForm):
-    content = forms.CharField(widget=CKEditorWidget())
+    content = forms.CharField(widget=CKEditorUploadingWidget())
 
     class Meta:
         model = Product

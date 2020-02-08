@@ -154,4 +154,4 @@ AUTH_USER_MODEL = 'accounts.User'
 LOGIN_URL = '/accounts/login/'
 
 # ckeditor模块的图片上传路径配置
-CKEDITOR_UPLOAD_PATH = os.path.join(MEDIA_ROOT, 'uploads')
+CKEDITOR_UPLOAD_PATH = 'uploads/'
