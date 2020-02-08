@@ -36,11 +36,16 @@ class ProduceListView(ListView):
     def get_queryset(self):
         """ 获取结果集的函数 """
         query = Q(status=constants.PRODUCT_STATUS_SELL, is_valid=True)
+        # 以商品名进行搜索
         name = self.request.GET.get('name', None)
         if name:
             query = query & Q(name__icontains=name)
+        # 以标签进行搜索
+        tag = self.request.GET.get('tag', '')
+        if tag:
+            query = query & Q(tags__code=tag)
+
         product_list = Product.objects.filter(query)
-        print(product_list)
         return product_list
 
     def get_context_data(self, *, object_list=None, **kwargs):

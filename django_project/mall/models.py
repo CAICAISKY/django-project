@@ -40,8 +40,8 @@ class Classify(BaseModel):
 
 class Tag(BaseModel):
     """ 商品的标签 """
-    uid = models.UUIDField('分类ID', default=uuid.uuid4(), editable=False)
-    img = models.ImageField('分类主图', upload_to='classify')
+    uid = models.UUIDField('标签ID', default=uuid.uuid4(), editable=False)
+    img = models.ImageField('标签主图', upload_to='tag')
     code = models.CharField('编码', max_length=32, null=True, blank=True)
     name = models.CharField('名称', max_length=12)
     reorder = models.SmallIntegerField('排序', default=0)

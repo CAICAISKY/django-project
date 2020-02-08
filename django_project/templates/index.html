@@ -48,13 +48,13 @@
         <!--图标分类-->
         <div class="weui-flex wy-iconlist-box">
             <div class="weui-flex__item">
-                <a href="pro_list.html" class="wy-links-iconlist">
+                <a href="{% url 'product:product_list' %}?tag=jxtj" class="wy-links-iconlist">
                     <div class="img"><img src="/static/images/icon-link1.png" /></div>
                     <p>精选推荐</p>
                 </a>
             </div>
             <div class="weui-flex__item">
-                <a href="pro_list.html" class="wy-links-iconlist">
+                <a href="{% url 'product:product_list' %}?tag=jstj" class="wy-links-iconlist">
                     <div class="img"><img src="/static/images/icon-link2.png" /></div>
                     <p>酒水专场</p>
                 </a>
@@ -93,24 +93,13 @@
             <div class="wy-Module-con">
                 <div class="swiper-container swiper-jingxuan" style="padding-top:34px;">
                     <div class="swiper-wrapper">
+                    {% for item in jxtj_list %}
                         <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan1.jpg" /></a>
+                            <a href="{% url 'product:product_detail' item.uid %}">
+                                <img src="{{ item.img.url }}" />
+                            </a>
                         </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan2.jpg" /></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan3.jpg" /></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan4.jpg" /></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan5.jpg" /></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan1.jpg" /></a>
-                        </div>
+                    {% endfor %}
                     </div>
                     <div class="swiper-pagination jingxuan-pagination"></div>
                 </div>
@@ -122,42 +111,13 @@
             <div class="wy-Module-con">
                 <div class="swiper-container swiper-jiushui" style="padding-top:34px;">
                     <div class="swiper-wrapper">
+                    {% for item in jstj_list %}
                         <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan1.jpg" /></a>
+                            <a href="{% url 'product:product_detail' item.uid %}">
+                                <img src="{{ item.img.url }}" />
+                            </a>
                         </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan2.jpg" /></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan3.jpg" /></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan4.jpg" /></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan5.jpg" /></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan1.jpg" /></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan1.jpg" /></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan2.jpg" /></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan3.jpg" /></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan4.jpg" /></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan5.jpg" /></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="pro_info.html"><img src="/static/upload/jingxuan1.jpg" /></a>
-                        </div>
+                    {% endfor %}
                     </div>
                     <div class="swiper-pagination jingxuan-pagination"></div>
                 </div>
@@ -168,72 +128,21 @@
             <div class="wy-Module-tit-line"><span>猜你喜欢</span></div>
             <div class="wy-Module-con">
                 <ul class="wy-pro-list clear">
+                {% for item in cnxh_list %}
                     <li>
-                        <a href="pro_info.html">
-                            <div class="proimg"><img src="/static/upload/pro1.jpg" /></div>
+                        <a href="{% url 'product:product_detail' item.uid %}">
+                            <div class="proimg">
+                                <img src="{{ item.img.url }}" />
+                            </div>
                             <div class="protxt">
                                 <div class="name">
-                                    洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯粮食白酒2瓶装包邮
+                                    {{ item.name }}
                                 </div>
-                                <div class="wy-pro-pri">¥<span>296.00</span></div>
+                                <div class="wy-pro-pri">兑换积分<span>{{ item.price }}</span></div>
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <a href="pro_info.html">
-                            <div class="proimg"><img src="/static/upload/pro2.jpg" /></div>
-                            <div class="protxt">
-                                <div class="name">
-                                    洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯粮食白酒2瓶装包邮
-                                </div>
-                                <div class="wy-pro-pri">¥<span>296.00</span></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pro_info.html">
-                            <div class="proimg"><img src="/static/upload/pro3.jpg" /></div>
-                            <div class="protxt">
-                                <div class="name">
-                                    洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯粮食白酒2瓶装包邮
-                                </div>
-                                <div class="wy-pro-pri">¥<span>296.00</span></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pro_info.html">
-                            <div class="proimg"><img src="/static/upload/pro4.jpg" /></div>
-                            <div class="protxt">
-                                <div class="name">
-                                    洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯粮食白酒2瓶装包邮
-                                </div>
-                                <div class="wy-pro-pri">¥<span>296.00</span></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pro_info.html">
-                            <div class="proimg"><img src="/static/upload/pro5.jpg" /></div>
-                            <div class="protxt">
-                                <div class="name">
-                                    洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯粮食白酒2瓶装包邮
-                                </div>
-                                <div class="wy-pro-pri">¥<span>296.00</span></div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pro_info.html">
-                            <div class="proimg"><img src="/static/upload/pro1.jpg" /></div>
-                            <div class="protxt">
-                                <div class="name">
-                                    洋河蓝色瓶装经典Q7浓香型白酒500ml52度高端纯粮食白酒2瓶装包邮
-                                </div>
-                                <div class="wy-pro-pri">¥<span>296.00</span></div>
-                            </div>
-                        </a>
-                    </li>
+                {% endfor %}
                 </ul>
                 <div class="morelinks"><a href="pro_list.html">查看更多 >></a></div>
             </div>
@@ -243,6 +152,7 @@
     {% include "footer.html" %}
 {% endblock %}
 {% block footer %}
+    <script src="/static/js/swiper.js"></script>
     <script>
         $('.swiper-banner').swiper({
             loop: true,
