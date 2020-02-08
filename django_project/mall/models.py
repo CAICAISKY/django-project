@@ -31,6 +31,11 @@ class Classify(BaseModel):
     class Meta:
         db_table = 'mall_classify'
         ordering = ['-reorder']
+        verbose_name = '商品分类'
+        verbose_name_plural = '商品分类'
+
+    def __str__(self):
+        return '{}:{}'.format(self.code, self.name)
 
 
 class Tag(BaseModel):
@@ -44,6 +49,11 @@ class Tag(BaseModel):
 
     class Meta:
         db_table = 'mall_tag'
+        verbose_name = '商品标签'
+        verbose_name_plural = '商品标签'
+
+    def __str__(self):
+        return '{}:{}'.format(self.code, self.name)
 
 
 class Product(BaseModel):
@@ -83,6 +93,6 @@ class Product(BaseModel):
     class Meta:
         db_table = 'mall_product'
         ordering = ['-reorder']
-        verbose_name = '商品'
-        verbose_name_plural = '商品'
+        verbose_name = '商品信息'
+        verbose_name_plural = '商品信息'
 
