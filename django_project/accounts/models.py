@@ -29,6 +29,20 @@ class User(AbstractUser):
         verbose_name = '用户'
         verbose_name_plural = '用户'
 
+    @property
+    def default_address(self):
+        """ 获取默认地址，如果没有设置，则获取第一个 """
+        default_address = None
+        address_list = self.user_address.filter(is_valid=True)
+        try:
+            default_address = address_list.filter(is_default=True)[0]
+        except IndexError:
+            try:
+                default_address = address_list[0]
+            except IndexError:
+                pass
+        return default_address
+
 
 class UserProfile(BaseModel):
     """ 用户详细信息 """
@@ -62,6 +76,8 @@ class UserAddress(BaseModel):
     class Meta:
         db_table = 'accounts_user_address'
         ordering = ['is_default', '-updated_at']
+        verbose_name = '用户地址'
+        verbose_name_plural = '用户地址'
 
     def get_phone_format(self):
         """ 获取屏蔽后的手机号码 """

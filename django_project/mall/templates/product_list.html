@@ -71,7 +71,8 @@
                     csrfmiddlewaretoken: '{{ csrf_token }}',
                     page: page,
                     name: '{{ search_data.name|default_if_none:'' }}',
-                    tag: '{{ search_data.tag|default_if_none:'' }}'
+                    tag: '{{ search_data.tag|default_if_none:'' }}',
+                    cls: '{{ search_data.cls|default_if_none:'' }}',
                 },
                 url: '{% url 'product:product_page_list' %}',
                 success: function(data, status) {

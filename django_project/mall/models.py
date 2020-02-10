@@ -20,7 +20,12 @@ class BaseModel(models.Model):
 class Classify(BaseModel):
     """ 商品的分类 """
     uid = models.UUIDField('分类ID', default=uuid.uuid4, editable=False)
-    parent = models.ForeignKey('self', related_name='children', verbose_name='商品分类自关联', on_delete=models.CASCADE)
+    parent = models.ForeignKey('self',
+                               related_name='children',
+                               verbose_name='商品分类自关联',
+                               null=True,
+                               blank=True,
+                               on_delete=models.CASCADE)
     code = models.CharField('编码', max_length=32, null=True, blank=True)
     img = models.ImageField('分类主图', upload_to='classify')
     name = models.CharField('名称', max_length=12)
@@ -41,7 +46,7 @@ class Classify(BaseModel):
 class Tag(BaseModel):
     """ 商品的标签 """
     uid = models.UUIDField('标签ID', default=uuid.uuid4(), editable=False)
-    img = models.ImageField('标签主图', upload_to='tag')
+    img = models.ImageField('标签主图', upload_to='classify')
     code = models.CharField('编码', max_length=32, null=True, blank=True)
     name = models.CharField('名称', max_length=12)
     reorder = models.SmallIntegerField('排序', default=0)

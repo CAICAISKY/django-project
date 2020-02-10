@@ -22,7 +22,9 @@ def product_list(request):
 def product_detail(request, uid):
     """ 商品详情 """
     product = get_object_or_404(Product, uid=uid, is_valid=True)
-    return render(request, 'product_detail.html', {'product': product})
+    address = request.user.default_address
+    print(address)
+    return render(request, 'product_detail.html', {'product': product, 'address': address})
 
 
 class ProduceListView(ListView):
@@ -44,7 +46,10 @@ class ProduceListView(ListView):
         tag = self.request.GET.get('tag', '')
         if tag:
             query = query & Q(tags__code=tag)
-
+        # 以分类进行搜索
+        cls = self.request.GET.get('cls', '')
+        if cls:
+            query = query & Q(classes__code=cls)
         product_list = Product.objects.filter(query)
         return product_list
 

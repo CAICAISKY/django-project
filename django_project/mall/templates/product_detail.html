@@ -58,38 +58,35 @@
                 <div class="wy-media-box2 weui-media-box_text">
                     <div class="weui-media-box_appmsg">
                         <div class="weui-media-box__hd proinfo-txt-l">
-                            <span class="promotion-label-tit">尺码</span>
+                            <span class="promotion-label-tit">数量</span>
                         </div>
                         <div class="weui-media-box__bd">
                             <div class="promotion-sku clear">
                                 <ul>
-                                    <li><a href="javascript:;">25</a></li>
-                                    <li><a href="javascript:;">30</a></li>
-                                    <li><a href="javascript:;">34</a></li>
-                                    <li><a href="javascript:;">40</a></li>
-                                    <li><a href="javascript:;">45</a></li>
-                                    <li><a href="javascript:;">50</a></li>
+                                    <li><a href="javascript:;">1</a></li>
+                                    <li><a href="javascript:;">3</a></li>
+                                    <li><a href="javascript:;">5</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="weui-media-box_appmsg">
-                        <div class="weui-media-box__hd proinfo-txt-l">
-                            <span class="promotion-label-tit">颜色</span>
-                        </div>
-                        <div class="weui-media-box__bd">
-                            <div class="promotion-sku clear">
-                                <ul>
-                                    <li><a href="javascript:;">黑色</a></li>
-                                    <li><a href="javascript:;">红色</a></li>
-                                    <li><a href="javascript:;">白色</a></li>
-                                    <li><a href="javascript:;">蓝色</a></li>
-                                    <li><a href="javascript:;">橘黄色</a></li>
-                                    <li><a href="javascript:;">绿色</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+{#                    <div class="weui-media-box_appmsg">#}
+{#                        <div class="weui-media-box__hd proinfo-txt-l">#}
+{#                            <span class="promotion-label-tit">颜色</span>#}
+{#                        </div>#}
+{#                        <div class="weui-media-box__bd">#}
+{#                            <div class="promotion-sku clear">#}
+{#                                <ul>#}
+{#                                    <li><a href="javascript:;">黑色</a></li>#}
+{#                                    <li><a href="javascript:;">红色</a></li>#}
+{#                                    <li><a href="javascript:;">白色</a></li>#}
+{#                                    <li><a href="javascript:;">蓝色</a></li>#}
+{#                                    <li><a href="javascript:;">橘黄色</a></li>#}
+{#                                    <li><a href="javascript:;">绿色</a></li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
                 </div>
                 <div class="wy-media-box2 txtpd weui-media-box_text">
                     <div class="weui-media-box_appmsg">
@@ -98,9 +95,13 @@
                         </div>
                         <div class="weui-media-box__bd">
                             <div class="promotion-message clear">
-                                <span class="promotion-item-text">江苏</span>
-                                <span class="promotion-item-text">宿迁</span>
-                                <span class="promotion-item-text">洋河新区</span>
+                                <span class="promotion-item-text">{{ address.province }}</span>
+                                <span class="promotion-item-text">{{ address.city }}</span>
+                                <span class="promotion-item-text">{{ address.area }}</span>
+                                {% if not address %}
+                                    <span class="promotion-item-text">请先填写地址信息</span>
+                                {% endif %}
+
                             </div>
                         </div>
                     </div>
@@ -247,33 +248,30 @@
                         <div class="weui-media-box__bd">
                             <div class="promotion-sku clear">
                                 <ul>
-                                    <li><a href="javascript:;">25</a></li>
-                                    <li><a href="javascript:;">30</a></li>
-                                    <li><a href="javascript:;">34</a></li>
-                                    <li><a href="javascript:;">40</a></li>
-                                    <li><a href="javascript:;">45</a></li>
-                                    <li><a href="javascript:;">50</a></li>
+                                    <li><a href="javascript:;">1</a></li>
+                                    <li><a href="javascript:;">3</a></li>
+                                    <li><a href="javascript:;">5</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="weui-media-box_appmsg">
-                        <div class="weui-media-box__hd proinfo-txt-l">
-                            <span class="promotion-label-tit">颜色</span>
-                        </div>
-                        <div class="weui-media-box__bd">
-                            <div class="promotion-sku clear">
-                                <ul>
-                                    <li><a href="javascript:;">黑色</a></li>
-                                    <li><a href="javascript:;">红色</a></li>
-                                    <li><a href="javascript:;">白色</a></li>
-                                    <li><a href="javascript:;">蓝色</a></li>
-                                    <li><a href="javascript:;">橘黄色</a></li>
-                                    <li><a href="javascript:;">绿色</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+{#                    <div class="weui-media-box_appmsg">#}
+{#                        <div class="weui-media-box__hd proinfo-txt-l">#}
+{#                            <span class="promotion-label-tit">颜色</span>#}
+{#                        </div>#}
+{#                        <div class="weui-media-box__bd">#}
+{#                            <div class="promotion-sku clear">#}
+{#                                <ul>#}
+{#                                    <li><a href="javascript:;">黑色</a></li>#}
+{#                                    <li><a href="javascript:;">红色</a></li>#}
+{#                                    <li><a href="javascript:;">白色</a></li>#}
+{#                                    <li><a href="javascript:;">蓝色</a></li>#}
+{#                                    <li><a href="javascript:;">橘黄色</a></li>#}
+{#                                    <li><a href="javascript:;">绿色</a></li>#}
+{#                                </ul>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
                 </div>
                 <div class="weui-msg__opr-area">
                     <p class="weui-btn-area">
