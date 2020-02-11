@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a4654d0-fb4e-4316-bc5c-da8e8d920fa5" name="Default Changelist" comment="订单详情页面实现">
+    <list default="true" id="6a4654d0-fb4e-4316-bc5c-da8e8d920fa5" name="Default Changelist" comment="商品添加购物车实现">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mall/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mall/templates/product_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mine/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mine/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mine/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mine/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,18 +39,18 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="HTML" value="86" />
+          <entry key="HTML" value="87" />
           <entry key="Image" value="10" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="346" />
+          <entry key="Python" value="347" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="96" />
-          <entry key="HTML" value="8524" />
-          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="HTML" value="8560" />
+          <entry key="PLAIN_TEXT" value="36" />
           <entry key="Python" value="51831" />
           <entry key="SQL" value="1" />
         </counts>
@@ -61,11 +59,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mall/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-end-line="109" />
+            <state relative-caret-position="508">
+              <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -74,10 +72,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mine/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="51" column="59" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mall/templates/product_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="368" column="22" lean-forward="true" selection-end-line="385" selection-end-column="14" />
+            <state relative-caret-position="140">
+              <caret line="196" column="107" selection-start-line="196" selection-start-column="107" selection-end-line="196" selection-end-column="107" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="108" lean-forward="true" selection-start-line="12" selection-start-column="108" selection-end-line="12" selection-end-column="108" />
             </state>
           </provider>
         </entry>
@@ -94,7 +110,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>exists</find>
       <find>error_messages</find>
       <find>acc</find>
       <find>address_delete</find>
@@ -124,6 +139,7 @@
       <find>购物车</find>
       <find>ramian_count</find>
       <find>join_cart</find>
+      <find>8</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;static</replace>
@@ -145,7 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/system/templates/news_list.html" />
         <option value="$PROJECT_DIR$/accounts/tests.py" />
         <option value="$PROJECT_DIR$/django_study/migrations/forms.py" />
         <option value="$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/forms/fields.py" />
@@ -194,8 +209,9 @@
         <option value="$PROJECT_DIR$/mall/views.py" />
         <option value="$PROJECT_DIR$/mine/views.py" />
         <option value="$PROJECT_DIR$/mine/urls.py" />
-        <option value="$PROJECT_DIR$/mall/templates/product_detail.html" />
         <option value="$PROJECT_DIR$/mall/models.py" />
+        <option value="$PROJECT_DIR$/templates/footer.html" />
+        <option value="$PROJECT_DIR$/mall/templates/product_detail.html" />
       </list>
     </option>
   </component>
@@ -235,6 +251,11 @@
               <item name="django_project" type="462c0819:PsiDirectoryNode" />
               <item name="mall" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django_project" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
@@ -468,7 +489,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4992636" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49642345" visible="true" weight="0.21045576" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49642345" weight="0.21045576" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -476,8 +497,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5035765" side_tool="true" weight="0.31367293" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.8741059" weight="0.33646113" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.12660944" side_tool="true" visible="true" weight="0.33646113" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.87339056" visible="true" weight="0.33646113" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49642345" weight="0.32841823" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3297587" />
       <window_info anchor="bottom" id="Messages" order="14" />
@@ -520,7 +541,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="订单详情页面实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="订单详情页面实现" />
+    <MESSAGE value="商品添加购物车实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品添加购物车实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -785,13 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="91" lean-forward="true" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -866,13 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mine/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="49" column="6" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mall/templates/product_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -890,13 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall/templates/product_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="368" column="22" lean-forward="true" selection-end-line="385" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mine/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -909,11 +910,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mall/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-end-line="109" />
+        <state relative-caret-position="508">
+          <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mine/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="51" column="59" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="108" lean-forward="true" selection-start-line="12" selection-start-column="108" selection-end-line="12" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/templates/product_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="196" column="107" selection-start-line="196" selection-start-column="107" selection-end-line="196" selection-end-column="107" />
         </state>
       </provider>
     </entry>
