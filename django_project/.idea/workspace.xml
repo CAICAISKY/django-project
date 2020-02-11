@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a4654d0-fb4e-4316-bc5c-da8e8d920fa5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mine/templates/all_orders.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mine/urls.py" afterDir="false" />
+    <list default="true" id="6a4654d0-fb4e-4316-bc5c-da8e8d920fa5" name="Default Changelist" comment="订单详情页面实现">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall/templates/order_info2.html" beforeDir="false" afterPath="$PROJECT_DIR$/mine/templates/order_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall/templates/shopcart.html" beforeDir="false" afterPath="$PROJECT_DIR$/mall/templates/shopcart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mine/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mine/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mall/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mall/templates/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mine/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mine/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mine/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mine/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/all_orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/all_orders.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,19 +41,19 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="HTML" value="84" />
+          <entry key="HTML" value="86" />
           <entry key="Image" value="10" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="338" />
+          <entry key="Python" value="346" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="96" />
-          <entry key="HTML" value="8362" />
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="50625" />
+          <entry key="HTML" value="8524" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Python" value="51831" />
           <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
@@ -66,59 +62,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/django_project/urls.py">
+        <entry file="file://$PROJECT_DIR$/mall/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-end-line="109" />
               <folding>
-                <element signature="e#638#670#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mine/urls.py">
+        <entry file="file://$PROJECT_DIR$/mall/templates/product_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="62" lean-forward="true" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mine/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding>
-                <element signature="e#26#69#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mine/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-88">
-              <caret line="62" column="35" lean-forward="true" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mine/templates/order_info.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="57" lean-forward="true" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="199">
+              <caret line="368" column="22" lean-forward="true" selection-end-line="385" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -135,11 +94,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>has_chan</find>
-      <find>save</find>
-      <find>login-user-pasw</find>
-      <find>cleaned_data</find>
-      <find>A user with that username already exists</find>
       <find>exists</find>
       <find>error_messages</find>
       <find>acc</find>
@@ -165,6 +119,11 @@
       <find>立即购买</find>
       <find>selcet_sku</find>
       <find>src=&quot;</find>
+      <find>promotion</find>
+      <find>promotion-sku</find>
+      <find>购物车</find>
+      <find>ramian_count</find>
+      <find>join_cart</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;static</replace>
@@ -225,18 +184,18 @@
         <option value="$PROJECT_DIR$/mall/urls.py" />
         <option value="$PROJECT_DIR$/mall/admin.py" />
         <option value="$PROJECT_DIR$/django_project/views.py" />
-        <option value="$PROJECT_DIR$/mall/models.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/mall/templates/product_list.html" />
         <option value="$PROJECT_DIR$/accounts/admin.py" />
         <option value="$PROJECT_DIR$/accounts/models.py" />
-        <option value="$PROJECT_DIR$/mall/views.py" />
         <option value="$PROJECT_DIR$/mine/models.py" />
         <option value="$PROJECT_DIR$/django_project/urls.py" />
-        <option value="$PROJECT_DIR$/mall/templates/product_detail.html" />
-        <option value="$PROJECT_DIR$/mine/urls.py" />
-        <option value="$PROJECT_DIR$/mine/views.py" />
         <option value="$PROJECT_DIR$/mine/templates/order_info.html" />
+        <option value="$PROJECT_DIR$/mall/views.py" />
+        <option value="$PROJECT_DIR$/mine/views.py" />
+        <option value="$PROJECT_DIR$/mine/urls.py" />
+        <option value="$PROJECT_DIR$/mall/templates/product_detail.html" />
+        <option value="$PROJECT_DIR$/mall/models.py" />
       </list>
     </option>
   </component>
@@ -269,32 +228,12 @@
             <path>
               <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="django_project" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_project" type="462c0819:PsiDirectoryNode" />
-              <item name="django_project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_project" type="462c0819:PsiDirectoryNode" />
               <item name="mall" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="django_project" type="462c0819:PsiDirectoryNode" />
-              <item name="medias" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_project" type="462c0819:PsiDirectoryNode" />
-              <item name="mine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_project" type="462c0819:PsiDirectoryNode" />
-              <item name="mine" type="462c0819:PsiDirectoryNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -579,6 +518,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="订单详情页面实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="订单详情页面实现" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <default-breakpoints>
@@ -591,20 +534,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/utils/functional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/urls/resolvers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="583" selection-start-line="583" selection-end-line="583" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/importlib/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -839,13 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall/templates/product_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="78" column="35" lean-forward="true" selection-end-line="110" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -859,16 +781,6 @@
           <caret line="17" lean-forward="true" selection-end-line="17" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#26#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -894,59 +806,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mall/templates/product_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4105">
-          <caret line="291" column="35" lean-forward="true" selection-start-line="291" selection-start-column="35" selection-end-line="291" selection-end-column="35" />
-          <folding>
-            <element signature="e#8184#8233#0#HTML" expanded="true" />
-            <element signature="e#8972#9025#0#HTML" expanded="true" />
-            <element signature="e#9092#9145#0#HTML" expanded="true" />
-            <element signature="e#9212#9265#0#HTML" expanded="true" />
-            <element signature="e#10265#10314#0#HTML" expanded="true" />
-            <element signature="e#10851#10871#0#HTML" expanded="true" />
-            <element signature="e#10910#10928#0#HTML" expanded="true" />
-            <element signature="e#11042#11064#0#HTML" expanded="true" />
-            <element signature="e#11937#11957#0#HTML" expanded="true" />
-            <element signature="e#11996#12014#0#HTML" expanded="true" />
-            <element signature="e#12356#12378#0#HTML" expanded="true" />
-            <element signature="e#12443#12460#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mine/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="62" lean-forward="true" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/images/icon_nav_city.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mine/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding>
-            <element signature="e#26#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mall/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -955,17 +816,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mine/models.py">
+    <entry file="file://$PROJECT_DIR$/django_project/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="62" column="35" lean-forward="true" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+        <state relative-caret-position="343">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <element signature="e#638#670#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mine/templates/order_info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="57" lean-forward="true" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+        <state relative-caret-position="210">
+          <caret line="14" column="70" lean-forward="true" selection-end-line="122" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -973,12 +837,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_project/urls.py">
+    <entry file="file://$PROJECT_DIR$/mall/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        <state relative-caret-position="170">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <element signature="e#638#670#0" expanded="true" />
+            <element signature="e#26#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.venv/lib/python3.7/site-packages/django/contrib/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-268">
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1048">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mine/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="49" column="6" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/templates/product_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="78" column="35" lean-forward="true" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mine/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/templates/product_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="368" column="22" lean-forward="true" selection-end-line="385" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mine/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="36" column="32" selection-end-line="55" />
+          <folding>
+            <element signature="e#26#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mall/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-end-line="109" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -2,6 +2,7 @@ import uuid as uuid
 
 from django.contrib.contenttypes.fields import GenericRelation
 from django.db import models
+from django.db.models import F
 
 from accounts.models import User
 from system.models import ImageFile
@@ -101,3 +102,8 @@ class Product(BaseModel):
         verbose_name = '商品信息'
         verbose_name_plural = '商品信息'
 
+    def update_store_count(self, count):
+        """ 更新商品库存 """
+        self.ramain_count = F('ramain_count') - abs(count)
+        self.save()
+        self.refresh_from_db()
