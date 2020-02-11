@@ -21,12 +21,19 @@ from django_project import settings, views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('mall/', include('mall.urls')),
-    path('index/', views.index, name='index'),
+    # 首页
     path('', views.index),
+    path('index/', views.index, name='index'),
+    # 商品模块
+    path('mall/', include('mall.urls')),
+    # 系统模块
     path('sys/', include('system.urls')),
+    # 用户模块
+    path('accounts/', include('accounts.urls')),
+    # 个人模块
+    path('mine/', include('mine.urls')),
     path('study/', include('django_study.urls')),
-    path('accounts/', include('accounts.urls'))
+
 ]
 
 urlpatterns += [

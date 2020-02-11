@@ -42,12 +42,16 @@ class Order(BaseModel):
         verbose_name = '订单'
         verbose_name_plural = '订单'
 
+    def get_cart_products(self):
+        """ 获取购物车中所有非购物车状态下的商品 """
+        return self.carts.exclude(status=constants.ORDER_STATUS_INIT)
+
 
 class Cart(BaseModel):
     """ 购物车模型 """
     user = models.ForeignKey(User, related_name='user_carts', on_delete=models.CASCADE)
     product = models.ForeignKey(Product, related_name='product_carts', on_delete=models.CASCADE)
-    order = models.ForeignKey(Order, verbose_name='订单', null=True, on_delete=models.CASCADE)
+    order = models.ForeignKey(Order, verbose_name='订单', related_name='carts', null=True, on_delete=models.CASCADE)
 
     # 商品快照
     name = models.CharField('商品名称', max_length=128)
