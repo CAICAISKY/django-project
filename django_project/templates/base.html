@@ -29,13 +29,18 @@
 
     <script src="/static/lib/jquery-2.1.4.js"></script>
     <script src="/static/lib/fastclick.js"></script>
+    <script src="/static/js/jquery-weui.js"></script>
     <script>
       // 手机端事件穿透
       $(function() {
         FastClick.attach(document.body);
       });
+      {% if messages %}
+      {% for message in messages %}
+        $.toptip('{{ message }}', '{{ message.tags }}');
+      {% endfor %}
+      {% endif %}
     </script>
-    <script src="/static/js/jquery-weui.js"></script>
     {% block footer %}
     {#   页面底部，可以用来放html片段，可以添加新的js     #}
     {% endblock %}

@@ -193,7 +193,7 @@
         <div class="weui-tabbar__icon promotion-foot-menu-collection"></div>
         <p class="weui-tabbar__label">收藏</p>
     </a>
-    <a href="shopcart.html" class="promotion-foot-menu-items">
+    <a href="{% url 'mine:cart' %}" class="promotion-foot-menu-items">
         <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">{{ user.user_carts.count }}</span>
         <div class="weui-tabbar__icon promotion-foot-menu-cart"></div>
         <p class="weui-tabbar__label">购物车</p>
@@ -221,7 +221,7 @@
                 </div>
                 <div class="weui-msg__opr-area">
                     <p class="weui-btn-area">
-                        <a href="shopcart.html" class="weui-btn weui-btn_primary">去购物车结算</a>
+                        <a href="{% url 'mine:cart' %}" class="weui-btn weui-btn_primary">去购物车结算</a>
                         <a href="javascript:;" class="weui-btn weui-btn_default close-popup">不，我再看看</a>
                     </p>
                 </div>
@@ -378,7 +378,7 @@
                 count: 1
             },
             function(rest) {
-                alert(rest)
+
             }
         )
     });
