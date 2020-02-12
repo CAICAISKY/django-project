@@ -8,7 +8,8 @@
         <div class="wy-header-icon-back"><span></span></div>
         <div class="wy-header-title">订单详情</div>
     </header>
-    <form class="weui-content" method="post">
+    <form class="weui-content" method="post" action="{% url 'mine:order_pay' order.sn %}">
+        {% csrf_token %}
         <div class="wy-media-box weui-media-box_text address-select">
             <div class="weui-media-box_appmsg">
                 <div class="weui-media-box__hd proinfo-txt-l" style="width:20px;">

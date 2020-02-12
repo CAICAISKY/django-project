@@ -194,7 +194,7 @@
         <p class="weui-tabbar__label">收藏</p>
     </a>
     <a href="{% url 'mine:cart' %}" class="promotion-foot-menu-items">
-        <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">{{ user.user_carts.count }}</span>
+        <span id="carts_count" class="weui-badge" style="position: absolute;top: -.4em;right: 1em;"></span>
         <div class="weui-tabbar__icon promotion-foot-menu-cart"></div>
         <p class="weui-tabbar__label">购物车</p>
     </a>
@@ -322,6 +322,7 @@
 <script>
     $(function () {
         initTopHoverTree('tophov' + 'ertree', 30, 10, 10);
+        carts_count();
     });
 </script>
 <script>
@@ -370,6 +371,7 @@
         }
         aniHovertree();
     }
+    // 添加购物车
     $('#cart_add').click(function() {
         $.post(
             "{% url 'mine:cart_add' product.uid %}",
@@ -378,9 +380,19 @@
                 count: 1
             },
             function(rest) {
-
+                carts_count();
             }
         )
     });
+    // 获取购物车中的商品数量
+    function carts_count() {
+        $.post(
+            "{% url 'mine:cart_count' %}",
+            {csrfmiddlewaretoken: '{{ csrf_token }}'},
+            function (rest) {
+                $('#carts_count').text(rest)
+            }
+        )
+    }
 </script>
 {% endblock %}

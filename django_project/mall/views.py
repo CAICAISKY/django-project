@@ -23,7 +23,6 @@ def product_detail(request, uid):
     """ 商品详情 """
     product = get_object_or_404(Product, uid=uid, is_valid=True)
     address = request.user.default_address
-    print(address)
     return render(request, 'product_detail.html', {'product': product, 'address': address})
 
 

@@ -2,6 +2,8 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 # Create your models here.
+from django.db.models import F
+
 from utils import constants
 
 
@@ -42,6 +44,18 @@ class User(AbstractUser):
             except IndexError:
                 pass
         return default_address
+
+    def integral_oper(self, num, type=1):
+        """
+        修改点券
+        :param type: 操作类型， 0为扣分、1为充值
+        :param num: 操作的点数
+        """
+        if type == 0:
+            self.integral = F('integral') - abs(num)
+        else:
+            self.integral = F('interral') + abs(num)
+        self.save()
 
 
 class UserProfile(BaseModel):

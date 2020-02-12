@@ -95,3 +95,38 @@ def cart(request):
     return render(request, 'cart.html', {
         'cart_list': cart_list
     })
+
+
+@login_required
+def cart_count(request):
+    """ 获取当前用户尚在购物车中的商品数量 """
+    carts = request.user.user_carts.filter(status=constants.ORDER_STATUS_INIT)
+    count = 0
+    for cart in carts:
+        count += cart.count
+    return HttpResponse(count)
+
+
+@login_required
+@transaction.atomic()
+def order_pay(request, sn):
+    """ 订单支付 """
+    user = request.user
+    order = get_object_or_404(Order, sn=sn, user=user)
+    if order.status == constants.ORDER_STATUS_PAID:
+        messages.warning(request, '该订单已完成支付，无需再次支付')
+        return redirect('mine:order_detail', sn=sn)
+    # 校验积分
+    if user.integral < order.buy_amount:
+        messages.error(request, '积分不充足，请进行充值!')
+        return redirect('mine:order_detail', sn=sn)
+    # 扣除积分
+    user.integral_oper(order.buy_amount, 0)
+    # 修改订单状态
+    order.status = constants.ORDER_STATUS_PAID
+    order.save()
+    # 修改购物车的状态
+    order.carts.all().update(status=constants.ORDER_STATUS_PAID)
+    messages.success(request, '支付成功')
+    return redirect('mine:order_detail', sn=sn)
+
