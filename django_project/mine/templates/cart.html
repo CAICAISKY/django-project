@@ -84,8 +84,7 @@
     <script type="text/javascript">
         $(function () {
            var spinner_list =  $('.Spinner');
-           console.log(spinner_list)
-           for (let index in spinner_list) {
+           for (let index=0;index<spinner_list.length;index++) {
                $(spinner_list[index]).Spinner({ value: $(spinner_list[index]).attr('data-count'), len: 3, max: 999 });
            }
         });
