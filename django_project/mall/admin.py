@@ -21,7 +21,7 @@ class ProductAdminForm(forms.ModelForm):
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['name', 'origin_price']
+    list_display = ['name', 'id', 'origin_price']
     actions = [set_valid, set_invalid]
     form = ProductAdminForm
 

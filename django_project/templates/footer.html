@@ -1,26 +1,43 @@
 <!--底部导航-->
 <div class="foot-black"></div>
 <div class="weui-tabbar wy-foot-menu">
-    <a href="index.html" class="weui-tabbar__item weui-bar__item--on">
+    <a href="{% url 'index' %}" class="weui-tabbar__item
+    {% if tag == 'index' %}
+        weui-bar__item--on
+    {% endif %}
+    ">
         <div class="weui-tabbar__icon foot-menu-home"></div>
         <p class="weui-tabbar__label">首页</p>
     </a>
-    <a href="classify.html" class="weui-tabbar__item">
+    <a href="{% url 'product:classify' %}" class="weui-tabbar__item
+    {% if tag == 'classify' %}
+        weui-bar__item--on
+    {% endif %}
+    ">
         <div class="weui-tabbar__icon foot-menu-list"></div>
         <p class="weui-tabbar__label">分类</p>
     </a>
-    <a href="{% url 'mine:cart' %}" class="weui-tabbar__item">
+    <a href="{% url 'mine:cart' %}" class="weui-tabbar__item
+    {% if tag == 'cart' %}
+        weui-bar__item--on
+    {% endif %}
+    ">
         <span id="carts_count" class="weui-badge" style="position: absolute;top: -.4em;right: 1em;"></span>
         <div class="weui-tabbar__icon foot-menu-cart"></div>
         <p class="weui-tabbar__label">购物车</p>
     </a>
-    <a href="mine.html" class="weui-tabbar__item">
+    <a href="{% url 'mine:mine' %}" class="weui-tabbar__item
+    {% if tag == 'mine' %}
+        weui-bar__item--on
+    {% endif %}
+    ">
         <div class="weui-tabbar__icon foot-menu-member"></div>
         <p class="weui-tabbar__label">我的</p>
     </a>
 </div>
 
 <script>
+    {% if user.is_authenticated %}
     $(function () {
         $.post(
             "{% url 'mine:cart_count' %}",
@@ -30,4 +47,5 @@
             }
         )
     })
+    {% endif %}
 </script>

@@ -6,7 +6,7 @@ from django.db import transaction
 from django.db.models import Sum
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render, redirect
-from django.views.generic import DetailView
+from django.views.generic import DetailView, ListView
 
 from mall.models import Product
 from mine.models import Order, Cart
@@ -130,3 +130,62 @@ def order_pay(request, sn):
     messages.success(request, '支付成功')
     return redirect('mine:order_detail', sn=sn)
 
+
+@login_required
+@transaction.atomic()
+def order_delete(request):
+    """ 删除订单 """
+    sn = request.POST.get('sn', '')
+    result = 'success'
+    if sn:
+        order = get_object_or_404(Order, sn=sn, user=request.user)
+        order.delete()
+    else:
+        result = 'error'
+    return HttpResponse(result)
+
+# @login_required
+# def order_list(request, status):
+#     """ 订单列表 """
+#     user = request.user
+#     orders = user.user_orders
+#     if status:
+#         orders = user.user_orders.filter(status=status)
+#     return render(request, 'order_list.html', {
+#         'order_list': orders,
+#         'status': status,
+#         'constants': constants
+#     })
+
+
+class OrderListView(LoginRequiredMixin, ListView):
+    """ 订单列表 """
+    template_name = 'order_list.html'
+    context_object_name = 'orders'
+
+    def get_queryset(self):
+        user = self.request.user
+        orders = user.user_orders.all()
+        if self.kwargs['status']:
+            orders = user.user_orders.filter(status=self.kwargs['status'])
+        return orders
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['status'] = self.kwargs['status']
+        context['constants'] = constants
+        return context
+
+
+@login_required
+def mine(request):
+    """ 个人中心 """
+    return render(request, 'mine.html', {
+        'constants': constants
+    })
+
+
+@login_required
+def product_collect(request):
+    """ 个人收藏 """
+    return render(request, 'product_collect.html')

@@ -60,7 +60,7 @@
                 </a>
             </div>
             <div class="weui-flex__item">
-                <a href="all_orders.html" class="wy-links-iconlist">
+                <a href="{% url 'mine:order_list' 0 %}" class="wy-links-iconlist">
                     <div class="img"><img src="/static/images/icon-link3.png" /></div>
                     <p>订单管理</p>
                 </a>
@@ -144,7 +144,7 @@
                     </li>
                 {% endfor %}
                 </ul>
-                <div class="morelinks"><a href="pro_list.html">查看更多 >></a></div>
+                <div class="morelinks"><a href="{% url 'product:product_list' %}">查看更多 >></a></div>
             </div>
         </div>
     </div>
@@ -152,7 +152,7 @@
 
 {% endblock %}
 {% block footer %}
-    {% include "footer.html" %}
+    {% include "footer.html" with tag='index' %}
     <script src="/static/js/swiper.js"></script>
     <script>
         $('.swiper-banner').swiper({

@@ -322,7 +322,9 @@
 <script>
     $(function () {
         initTopHoverTree('tophov' + 'ertree', 30, 10, 10);
-        carts_count();
+        {% if user.is_authenticated %}
+            carts_count();
+        {% endif %}
     });
 </script>
 <script>
@@ -380,7 +382,9 @@
                 count: 1
             },
             function(rest) {
-                carts_count();
+                {% if user.is_authenticated %}
+                    carts_count();
+                {% endif %}
             }
         )
     });

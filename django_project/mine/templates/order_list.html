@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>全部订单</title>
+{% endblock %}
+{% block container %}
+    <header class="wy-header wy-header-fixed">
+        <div class="wy-header-icon-back"><span></span></div>
+        <div class="wy-header-title">订单管理</div>
+    </header>
+    <div class="weui-content">
+        <div class="weui-tab">
+            <div class="weui-navbar bar-fixed" style="top:44px; height:44px; background:#fff;">
+                <a class="weui-navbar__item proinfo-tab-tit font-14 {% if status == 0 %}weui-bar__item--on{% endif %}"
+                   href="{% url 'mine:order_list' 0%}">全部</a>
+                <a class="weui-navbar__item proinfo-tab-tit font-14 {% if status == constants.ORDER_STATUS_SUBMIT %}weui-bar__item--on{% endif %}"
+                   href="{% url 'mine:order_list' constants.ORDER_STATUS_SUBMIT%}">待付款</a>
+                <a class="weui-navbar__item proinfo-tab-tit font-14 {% if status == constants.ORDER_STATUS_PAID %}weui-bar__item--on{% endif %}"
+                   href="{% url 'mine:order_list' constants.ORDER_STATUS_PAID%}">待发货</a>
+                <a class="weui-navbar__item proinfo-tab-tit font-14 {% if status == constants.ORDER_STATUS_SENT %}weui-bar__item--on{% endif %}"
+                   href="{% url 'mine:order_list' constants.ORDER_STATUS_SENT%}">待收货</a>
+                <a class="weui-navbar__item proinfo-tab-tit font-14 {% if status == constants.ORDER_STATUS_DONE %}weui-bar__item--on{% endif %}"
+                   href="{% url 'mine:order_list' constants.ORDER_STATUS_DONE%}">待评价</a>
+            </div>
+            <div class="weui-tab__bd proinfo-tab-con" style="padding-top:87px;">
+                <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+                    {% for order in orders %}
+                        <div class="weui-panel weui-panel_access">
+                            <div class="weui-panel__hd">
+                                <span>单号：{{ order.sn }}</span><span class="ord-status-txt-ts fr">交易成功</span>
+                            </div>
+                            <div class="weui-media-box__bd  pd-10">
+                                {% for item in order.carts.all %}
+                                    {% with product=item.product %}
+                                        <div class="weui-media-box_appmsg ord-pro-list">
+                                            <div class="weui-media-box__hd">
+                                                <a href="{% url 'product:product_detail' product.uid %}">
+                                                    <img class="weui-media-box__thumb" src="{{ item.img.url }}" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="weui-media-box__bd">
+                                                <h1 class="weui-media-box__desc">
+                                                    <a href="{% url 'product:product_detail' product.uid %}"
+                                                        class="ord-pro-link">{{ item.name }}</a>
+                                                </h1>
+    {#                                            <p class="weui-media-box__desc">#}
+    {#                                                规格：<span>红色</span>，<span>23</span>#}
+    {#                                            </p>#}
+                                                <div class="clear mg-t-10">
+                                                    <div class="wy-pro-pri fl">
+                                                        ¥<em class="num font-15">{{ item.amount }}</em>
+                                                    </div>
+                                                    <div class="pro-amount fr">
+                                                        <span class="font-13">数量×<em class="name">{{ item.count }}</em></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endwith %}
+                                {% endfor %}
+
+                            </div>
+                            <div class="ord-statistics">
+                                <span>共<em class="num">{{ order.buy_count }}</em>件商品，</span>
+                                <span class="wy-pro-pri">总金额：¥<em class="num font-15">{{ order.buy_amount }}</em></span>
+                                <span>(含运费<b>￥0.00</b>)</span>
+                            </div>
+                            <div class="weui-panel__ft">
+                                <div class="weui-cell weui-cell_access weui-cell_link oder-opt-btnbox">
+                                    {% if order.status == 0 or order.status == constants.ORDER_STATUS_SUBMIT %}
+                                        <a href="javascript:;" class="ords-btn-dele" sn="{{ order.sn }}">删除订单</a>
+                                    {% endif %}
+                                    {% if order.status == 0 %}
+                                        <a href="comment.html" class="ords-btn-com">评价</a>
+                                    {% endif %}
+                                    {% if order.status == constants.ORDER_STATUS_SUBMIT %}
+                                        <a href="{% url 'mine:order_detail' order.sn %}" class="ords-btn-com">去付款</a>
+                                    {% endif %}
+                                    {% if order.status == constants.ORDER_STATUS_PAID %}
+                                        商品正在打包中，请您耐心等待....
+                                    {% endif %}
+                                    {% if order.status == constants.ORDER_STATUS_SENT %}
+                                        <a href="javascript:;" class="ords-btn-com receipt">确认收货</a>
+                                    {% endif %}
+                                    {% if order.status == constants.ORDER_STATUS_DONE %}
+                                        <a href="comment.html" class="ords-btn-com">去评价</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}
+    <script>
+        $('.ords-btn-dele').on('click', function () {
+            let this_obj = $(this);
+            $.confirm(
+                '您确定要删除此订单吗?',
+                '确认删除?',
+                function () {
+                    $.post(
+                        '{% url "mine:order_delete" %}',
+                        {
+                            csrfmiddlewaretoken: '{{ csrf_token }}',
+                            sn: this_obj.attr('sn')
+                        },
+                        function(result) {
+                            $.toast('订单已经删除!');
+                            location.reload(true)
+                        }
+                    )
+                },
+                function () {
+                    //取消操作
+                }
+            );
+        });
+        $(document).on('click', '.receipt', function () {
+            $.alert('五星好评送蓝豆哦，赶快去评价吧！', '收货完成！');
+        });
+    </script>
+{% endblock %}

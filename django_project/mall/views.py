@@ -22,7 +22,9 @@ def product_list(request):
 def product_detail(request, uid):
     """ 商品详情 """
     product = get_object_or_404(Product, uid=uid, is_valid=True)
-    address = request.user.default_address
+    address = None
+    if request.user.is_authenticated:
+        address = request.user.default_address
     return render(request, 'product_detail.html', {'product': product, 'address': address})
 
 
@@ -58,3 +60,6 @@ class ProduceListView(ListView):
         return context
 
 
+def classify(request):
+    """ 商品分类 """
+    return render(request, 'classify.html')

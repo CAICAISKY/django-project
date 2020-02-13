@@ -40,6 +40,9 @@
         $.toptip('{{ message }}', '{{ message.tags }}');
       {% endfor %}
       {% endif %}
+        $('.wy-header-icon-back').click(function () {
+            history.go(-1);
+        })
     </script>
     {% block footer %}
     {#   页面底部，可以用来放html片段，可以添加新的js     #}
